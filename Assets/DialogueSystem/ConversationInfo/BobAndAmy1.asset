@@ -17,14 +17,20 @@ MonoBehaviour:
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     choiceEvent: {fileID: 0}
+    pickUpPoint: 0
     currentAction: 0
+    reactions_: []
   - convoText: WHY ARE YOU SO FAT
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     choiceEvent: {fileID: 11400000, guid: cb3680aac1be3624faad9c3bac78ef02, type: 2}
+    pickUpPoint: 0
     currentAction: 0
+    reactions_: []
   - convoText: WHY ARE YOU SO FATTTTTTTTTTTTTTTTTTT
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     choiceEvent: {fileID: 0}
+    pickUpPoint: 0
     currentAction: 0
+    reactions_: []

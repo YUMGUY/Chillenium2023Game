@@ -21,11 +21,15 @@ public class MarriageConversation : ScriptableObject
         [Header("Questioning System Var")]
         public int pickUpPoint;
         public Action currentAction;
-
         [SerializeField]
         public enum Action
         {
             IDLE, SHOW, DISAPPEAR
         }
+
+        [Header("Reactionary System")]
+        public List<Reactions> reactions_;
+
+        
     }
 }

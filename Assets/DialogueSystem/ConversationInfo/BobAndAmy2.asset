@@ -17,9 +17,14 @@ MonoBehaviour:
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     choiceEvent: {fileID: 0}
+    pickUpPoint: 0
     currentAction: 0
+    reactions_: []
   - convoText: OH WELL GUESS WHAT. ALL YEAR YOU ARE THE BIGGEST LOSER.
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     choiceEvent: {fileID: 0}
+    pickUpPoint: 0
     currentAction: 0
+    reactions_:
+    - {fileID: 11400000, guid: b75bf790fc41dbb48a1f376fce88b66f, type: 2}
