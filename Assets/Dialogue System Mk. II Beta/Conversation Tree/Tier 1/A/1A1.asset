@@ -18,10 +18,13 @@ MonoBehaviour:
     character: {fileID: 0}
     possibleNextTexts:
     - {fileID: 11400000, guid: 827a8a4cf6356cb44ba3bd47dbd30ce8, type: 2}
+    NextTaskConditions: []
+    holdButtonState: 0
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: -0.1
     WifeHeartIncreaseInterval: -0.1
+    nameOfFlag: testflag
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

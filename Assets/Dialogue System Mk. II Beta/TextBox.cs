@@ -16,11 +16,16 @@ public class TextBox : ScriptableObject
         public Sprite currentCharacterEmotion;
         public SpeakerInfo character;
 
+        public float typingSpeed;
+
         [Header("List all possible conversation branches from this text")]
         public TextBox[] possibleNextTexts;
 
         [Header("For each above possible convo, list a condition for them to be taken. Index 0 is the default")]
         public string[] NextTaskConditions;
+
+        [Header("Does the text move to the next box automatically?")]
+        public bool autoAdvance;
 
         [Header("Is the Hold Up Button Enabled?")]
         public bool holdButtonState;

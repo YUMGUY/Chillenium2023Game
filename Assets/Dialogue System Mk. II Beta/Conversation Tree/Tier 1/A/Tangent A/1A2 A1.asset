@@ -18,7 +18,10 @@ MonoBehaviour:
     character: {fileID: 0}
     possibleNextTexts:
     - {fileID: 11400000, guid: 085a362936eafbb49993a0d87f5c82ec, type: 2}
-    NextTaskConditions: []
+    NextTaskConditions:
+    - default
+    - failure
+    - testflag
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0

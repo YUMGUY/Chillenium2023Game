@@ -10,7 +10,7 @@ public class writeText : MonoBehaviour
     public newConvoManager convoManager;
     public GameManager gameManagerRef;
 
-    public float typingSpeed;
+    //public float typingSpeed;
     public TextMeshProUGUI textPanel;
     public TextMeshProUGUI namePanel;
 
@@ -41,7 +41,14 @@ public class writeText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && convoStarted == true)
+
+        if (currentDialogue.convo.autoAdvance && convoStarted) {
+            if (state == State.COMPLETED) // if the line is completed
+            {
+                convoManager.ConvoCompleteCalc(currentDialogue, false);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Z) && convoStarted)
         {
 
             if (state == State.COMPLETED) // if the line is completed
@@ -154,33 +161,37 @@ public class writeText : MonoBehaviour
         {
 
             if (currentDialogue.convo.ShouldPlayShake) {
-                if (charIndex == currentDialogue.convo.ShakeAtWhatCharIdx) { 
-                    // Make the screen shake!   
+                if (charIndex == currentDialogue.convo.ShakeAtWhatCharIdx) {
+                    // Make the screen shake!
+                    Debug.Log("Screen shook");
                 }
             }
             if (currentDialogue.convo.ShouldPlayFlash) {
                 if (charIndex == currentDialogue.convo.FlashAtWhatCharIdx)
                 {
                     // Make the screen flash!   
+                    Debug.Log("Screen flashed");
                 }
             }
             if (currentDialogue.convo.ShouldPlaySound) {
                 if (charIndex == currentDialogue.convo.SoundAtWhatCharIdx)
                 {
                     // Play a sound!   
+                    Debug.Log("Sound played");
                 }
             }
             if (currentDialogue.convo.ShouldPlayAnimation) {
                 if (charIndex == currentDialogue.convo.AnimationAtWhatCharIdx)
                 {
                     // Make the object animate!   
+                    Debug.Log("Thing Animated");
                 }
             }
 
 
             // add audio clip of text here
             textPanel.text += text[charIndex];
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSeconds(currentDialogue.convo.typingSpeed);
 
             if (++charIndex == text.Length)
             {

@@ -33,12 +33,12 @@ public class GameManager : MonoBehaviour
     }
 
     public void raiseFlag(string nameOfFlag) {
-        flagManager[nameOfFlag] = true;
+        flagManager[nameOfFlag] = true; //Potential bug to fix, if getting Null Ref here, it's because you're raising a flag at an origin
     }
 
     public void modifyHeartPos(bool changeHus, bool changeWife, float husFactor, float wifeFactor) {
 
-        Debug.Log("This dialogue affects heart level");
+        //Debug.Log("This dialogue affects heart level");
 
         if (husFactor > 0)
         {

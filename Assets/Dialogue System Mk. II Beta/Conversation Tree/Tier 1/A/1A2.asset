@@ -20,10 +20,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 6e1dfb9127eb88b478feab84eed68791, type: 2}
     - {fileID: 11400000, guid: 0b7fa91d540d890468ae65ffdc403efc, type: 2}
     - {fileID: 11400000, guid: 2661914c17dd9ab408907f3f2d0d3850, type: 2}
-    NextTaskConditions:
-    - default
-    - failure
-    - testflag
+    NextTaskConditions: []
     holdButtonState: 1
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
