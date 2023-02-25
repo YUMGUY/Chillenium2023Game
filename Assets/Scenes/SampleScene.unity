@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 152851271}
   - component: {fileID: 152851270}
   m_Layer: 5
-  m_Name: NameBox Panel
+  m_Name: NameBox UnderImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 1816659373}
   - component: {fileID: 1816659372}
   - component: {fileID: 1816659371}
+  - component: {fileID: 1816659375}
   m_Layer: 5
   m_Name: Dialogue Manager Canvas
   m_TagString: Untagged
@@ -809,6 +810,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1816659375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816659370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99770822805cac4e8c9294c61926b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typingSpeed: 0.15
+  textPanel: {fileID: 488779479}
+  namePanel: {fileID: 1971780655}
+  MarriageConversations:
+  - {fileID: 11400000, guid: 1c510ecdd78ee7b4982a4bc740b52260, type: 2}
+  currentConvo: {fileID: 0}
+  TouhouConversationIndex: 0
+  pathSceneNumber: 0
+  dialoguePanel: {fileID: 1858798390}
+  character1: {fileID: 1024311614}
+  character2: {fileID: 0}
+  convoStarted: 0
 --- !u!1 &1858798390
 GameObject:
   m_ObjectHideFlags: 0

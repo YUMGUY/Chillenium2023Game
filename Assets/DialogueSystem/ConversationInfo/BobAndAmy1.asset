@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversations:
   - convoText: WHY ARE YOU SO UGLY
-    currentSpriteEmotion: {fileID: 0}
-    character: {fileID: 0}
+    currentCharacterEmotion: {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     currentAction: 0
   - convoText: WHY ARE YOU SO FAT
-    currentSpriteEmotion: {fileID: 0}
-    character: {fileID: 0}
+    currentCharacterEmotion: {fileID: 0}
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     currentAction: 0

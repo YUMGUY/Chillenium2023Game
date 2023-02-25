@@ -14,7 +14,7 @@ public class MarriageConversation : ScriptableObject
     {
         [TextArea(2, 10)]
         public string convoText;
-        public Sprite currentSpriteEmotion;
+        public Sprite currentCharacterEmotion;
         public SpeakerInfo character;
         public Action currentAction;
 
