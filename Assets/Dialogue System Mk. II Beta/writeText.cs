@@ -28,6 +28,7 @@ public class writeText : MonoBehaviour
 
     [Header("Reactionary Variables")]
     public ScreenShake shaker;
+    public FlashScreen flasher;
 
 
     private enum State
@@ -134,7 +135,7 @@ public class writeText : MonoBehaviour
 
 
         textPanel.text = "";
-
+        
         state = State.TALKING;
 
         try
@@ -156,7 +157,8 @@ public class writeText : MonoBehaviour
 
         
         //showEmotion(emotionParam, label);
-
+        // apply blanket text changes
+        
 
         int charIndex = 0;
 
@@ -168,6 +170,7 @@ public class writeText : MonoBehaviour
                     // Make the screen shake!
                     Debug.Log("Screen shook");
                     // screenshake script reference
+                    StartCoroutine(shaker.Shake(currentDialogue.convo.durationShake_, currentDialogue.convo.intensity_));
                 }
             }
             if (currentDialogue.convo.ShouldPlayFlash) {
@@ -175,6 +178,7 @@ public class writeText : MonoBehaviour
                 {
                     // Make the screen flash!   
                     Debug.Log("Screen flashed");
+                    flasher.flashAnimator.SetTrigger("Flash");
                 }
             }
             if (currentDialogue.convo.ShouldPlaySound) {
@@ -198,7 +202,7 @@ public class writeText : MonoBehaviour
             textPanel.text += text[charIndex];
             yield return new WaitForSeconds(currentDialogue.convo.typingSpeed);
 
-            if (++charIndex == text.Length)
+            if (++charIndex >= text.Length)
             {
                 // print("finished");
                 state = State.COMPLETED;

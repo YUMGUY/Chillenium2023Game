@@ -44,7 +44,7 @@ public class newConvoManager : MonoBehaviour
     }
 
     public TextBox shuffleConvos(int Tier) {
-        //int lengthOfOriginArr = originArr[Tier].Length;
+       // int lengthOfOriginArr = originArr[Tier].Length;
         int lengthOfOriginArr = 0; // ----------------------------This is debug, replace with line above for final product
         int chosenText = Random.Range(0, lengthOfOriginArr);
         Debug.Log("The chosen origin was Tier " + (Tier+1) + " with the text: " + originArr[Tier][chosenText].convo.convoText);

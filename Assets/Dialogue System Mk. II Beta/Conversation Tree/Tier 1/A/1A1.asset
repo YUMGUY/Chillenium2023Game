@@ -30,10 +30,12 @@ MonoBehaviour:
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
+    ShouldPlayShake: 1
+    ShakeAtWhatCharIdx: 3
+    durationShake_: 0.5
+    intensity_: 0.1
+    ShouldPlayFlash: 1
+    FlashAtWhatCharIdx: 3
     ShouldPlaySound: 0
     SoundAtWhatCharIdx: 0
     soundToPlay: {fileID: 0}
