@@ -81,10 +81,6 @@ public class writeText : MonoBehaviour
     public IEnumerator typeText(string text)
     {
 
-        
-
-
-
         try
         {
             namePanel.text = currentDialogue.convo.character.name;
@@ -191,6 +187,10 @@ public class writeText : MonoBehaviour
             leftCharSlot.SetActive(currentDialogue.convo.LeftCharOn);
             rightCharSlot.SetActive(currentDialogue.convo.RightCharOn);
             centerCharSlot.SetActive(currentDialogue.convo.CenterCharOn);
+
+            if (currentDialogue.convo.nameOfFlag != null && currentDialogue.convo.nameOfFlag != "") {
+                gameManagerRef.raiseFlag(currentDialogue.convo.nameOfFlag);
+            }
 
             StartCoroutine(typeText(currentDialogue.convo.convoText));
         }

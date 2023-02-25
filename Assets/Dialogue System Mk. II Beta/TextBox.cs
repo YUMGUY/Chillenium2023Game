@@ -25,6 +25,9 @@ public class TextBox : ScriptableObject
         public float HusbandHeartIncreaseInterval;
         public float WifeHeartIncreaseInterval;
 
+        [Header("Raise a flag at this dialogue?")]
+        public string nameOfFlag;
+
         [Header("Enable or Disable Characters")]
         public bool LeftCharOn;
         public bool RightCharOn;

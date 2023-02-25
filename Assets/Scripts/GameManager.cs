@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void raiseFlag(string nameOfFlag) {
+        flagManager[nameOfFlag] = 1;
+    }
+
     public void modifyHeartPos(bool changeHus, bool changeWife, float husFactor, float wifeFactor) {
 
         Debug.Log("This dialogue affects heart level");
