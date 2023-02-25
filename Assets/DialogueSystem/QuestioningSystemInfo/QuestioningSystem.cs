@@ -40,6 +40,8 @@ public class QuestioningSystem : MonoBehaviour
             else // in the midst of typing
             {
                 StopAllCoroutines();
+
+                // check if there is a choiceEvent
                 textPanel.text = questioningConversation.conversations[questionDialogueIndex].convoText;
                 state = State.COMPLETED;
 

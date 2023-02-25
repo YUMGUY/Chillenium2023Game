@@ -22,6 +22,7 @@ public class ConversationManager : MonoBehaviour
     public ChoiceEvent currentChoiceEvent;
     public GameObject currentChoiceChosen;
     public GameObject choiceDisplay;
+    public bool isChoosing = false;
 
 
     [Header("People and Textbox")]
@@ -61,6 +62,11 @@ public class ConversationManager : MonoBehaviour
             else // in the midst of typing
             {
                 StopAllCoroutines();
+                if(currentChoiceEvent != null && isChoosing == false)
+                {
+                    StartCoroutine(MakeChoice());
+                    isChoosing = true;
+                }
                 textPanel.text = currentConvo.conversations[convoIndex].convoText;
                 state = State.COMPLETED;
 
@@ -234,6 +240,7 @@ public class ConversationManager : MonoBehaviour
                     convoIndex = 0;
                 }
                 currentChoiceEvent = null;
+                isChoosing = false;
                 StartCoroutine(typeText(currentConvo.conversations[convoIndex].convoText));
                 
                 break;
