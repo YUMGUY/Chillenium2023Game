@@ -65,7 +65,12 @@ public class TextBox : ScriptableObject
         public Animation animToPlay;
         public Animator whichObjToAnim;
 
-
+        [Header("Custom Text Effects")]
+        public Color textColor_;
+        public float inputFontSize;
+        public bool isBold;
+        public bool isWavy;
+        public bool isWiggling;
         [SerializeField]
         public enum Action
         {

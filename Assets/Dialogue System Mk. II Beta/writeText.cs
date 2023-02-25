@@ -29,6 +29,8 @@ public class writeText : MonoBehaviour
     [Header("Reactionary Variables")]
     public ScreenShake shaker;
     public FlashScreen flasher;
+    public bool isAnimatingText;
+    public EmotionalTextMaker textEmotioner;
 
 
     private enum State
@@ -158,7 +160,37 @@ public class writeText : MonoBehaviour
         
         //showEmotion(emotionParam, label);
         // apply blanket text changes
-        
+        try
+        {   
+            if(currentDialogue.convo.textColor_.a <= 0 ) { textPanel.color = Color.white;  }
+            else { textPanel.color = currentDialogue.convo.textColor_;  }
+            
+            if(currentDialogue.convo.inputFontSize <= 0)
+            {
+                textPanel.fontSize = 36f;
+            }
+            else
+            {
+                textPanel.fontSize = currentDialogue.convo.inputFontSize;
+            }
+            
+            if(currentDialogue.convo.isBold)
+            {
+                textPanel.fontStyle = FontStyles.Bold;
+            }
+            else
+            {
+                textPanel.fontStyle = FontStyles.Normal;
+            }
+
+            if(currentDialogue.convo.isWavy){ textEmotioner.wavyText = true; }
+            if(currentDialogue.convo.isWiggling) { textEmotioner.wiggleText = true; }
+        }
+        catch
+        {
+            textPanel.color = Color.white;
+            textPanel.fontSize = 36f;
+        }
 
         int charIndex = 0;
 
@@ -223,6 +255,10 @@ public class writeText : MonoBehaviour
         {
             currentDialogue = newDialogue;
             textPanel.text = string.Empty;
+
+            //added for text effects (animation)
+            textEmotioner.wiggleText = false;
+            textEmotioner.wavyText = false;
 
             if (currentDialogue.convo.IncreaseHusbandHeart || currentDialogue.convo.IncreaseWifeHeart)
             {

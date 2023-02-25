@@ -43,3 +43,8 @@ MonoBehaviour:
     AnimationAtWhatCharIdx: 0
     animToPlay: {fileID: 0}
     whichObjToAnim: {fileID: 0}
+    textColor_: {r: 1, g: 0, b: 0, a: 1}
+    inputFontSize: 91.31
+    isBold: 1
+    isWavy: 1
+    isWiggling: 0
