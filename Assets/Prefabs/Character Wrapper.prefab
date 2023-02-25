@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3383439044134197683}
   - component: {fileID: 3383439044134197709}
+  - component: {fileID: 2030335068}
   m_Layer: 5
   m_Name: Character Slot - Left
   m_TagString: Untagged
@@ -253,6 +254,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3383439044134197682}
   m_CullTransparentMesh: 1
+--- !u!95 &2030335068
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383439044134197682}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7df74db662bbc674dbece6d5041d11cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &4765028120617070917
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4713383960518057854}
   - component: {fileID: 6895606717207011647}
+  - component: {fileID: 201408250}
   m_Layer: 5
   m_Name: Character Slot - Center
   m_TagString: Untagged
@@ -375,6 +397,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5168169642813718583}
   m_CullTransparentMesh: 1
+--- !u!95 &201408250
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168169642813718583}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ed72e7d12637ee458f961c444480fc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5936952784306976263
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2200715014918591695}
   - component: {fileID: 3749740994475993671}
+  - component: {fileID: 1146144191}
   m_Layer: 5
   m_Name: Character Slot - Right
   m_TagString: Untagged
@@ -467,6 +510,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7941761502938223030}
   m_CullTransparentMesh: 1
+--- !u!95 &1146144191
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7941761502938223030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 203cc6a37f3aee04daa279e56f4510a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &8182287484332872945
 GameObject:
   m_ObjectHideFlags: 0
