@@ -17,8 +17,7 @@ MonoBehaviour:
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 11400000, guid: 65e4e0e4e3fc8f149847357612b5a66b, type: 2}
+    possibleNextTexts: []
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -45,3 +44,8 @@ MonoBehaviour:
     AnimationAtWhatCharIdx: 0
     animToPlay: {fileID: 0}
     whichObjToAnim: {fileID: 0}
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
