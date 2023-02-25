@@ -13,10 +13,15 @@ public class ConversationManager : MonoBehaviour
     [Header("Conversation Scene Info")]
     public List<MarriageConversation> potentialPaths;
     public MarriageConversation currentConvo;
-    public int TouhouConversationIndex;
     private int convoIndex = 0;
     private State state = State.COMPLETED;
-    public int pathSceneNumber = 0;  // to keep track of what path number I took
+
+    [Header("Choice System")]
+    public int currentPathNumber = 0;  // to keep track of what path number I took
+    public int previousPathNumber = 0;
+    public ChoiceEvent currentChoiceEvent;
+    public GameObject currentChoiceChosen;
+    public GameObject choiceDisplay;
 
 
     [Header("People and Textbox")]
@@ -71,12 +76,12 @@ public class ConversationManager : MonoBehaviour
         character1.SetActive(true);
         // character2.SetActive(true);
 
-        if(pathSceneNumber >= potentialPaths.Count)
+        if(currentPathNumber >= potentialPaths.Count)
         {
             print("path scene number exceeds number of paths in game");
             return;
         }
-        currentConvo = potentialPaths[pathSceneNumber];
+        currentConvo = potentialPaths[currentPathNumber];
 
         StartCoroutine(typeText(currentConvo.conversations[convoIndex].convoText));
     }
@@ -93,6 +98,10 @@ public class ConversationManager : MonoBehaviour
         Sprite emotionParam = currentConvo.conversations[convoIndex].currentCharacterEmotion;
         showEmotion(emotionParam, label);
 
+        // choice system takes place
+        currentChoiceEvent = currentConvo.conversations[convoIndex].choiceEvent;
+        
+
         int charIndex = 0;
 
         while (state != State.COMPLETED)
@@ -108,6 +117,11 @@ public class ConversationManager : MonoBehaviour
                 break;
             }
         }
+        if (currentChoiceEvent != null)
+        {
+            print("Currently making a choice");
+            StartCoroutine(MakeChoice());
+        }
 
         yield return null;
     }
@@ -115,7 +129,13 @@ public class ConversationManager : MonoBehaviour
 
     public void NextLine() // controls the value of convoIndex, which is the marker for which speaker is speaking
     {
+        // 
 
+        if(currentChoiceEvent != null)
+        {
+            print("You haven't made a choice yet bitch");
+            return;
+        }
         // depends on line 79
         if (convoIndex < currentConvo.conversations.Count - 1)
         {
@@ -168,7 +188,51 @@ public class ConversationManager : MonoBehaviour
     public IEnumerator MakeChoice()
     {
 
+        currentChoiceChosen = null;
+        
+        float number = 75f;
+        if (currentChoiceEvent.numberOfChoices == 1)
+        {
+            number = 0;
+        }
 
+        for (int i = 0; i < currentChoiceEvent.numberOfChoices; ++i)
+        {
+            GameObject prefabC = Instantiate(currentChoiceEvent.choiceResource, choiceDisplay.transform);
+            prefabC.transform.GetComponentInChildren<TextMeshProUGUI>().text = currentChoiceEvent.possibleChoices[i].choiceText;
+            prefabC.transform.localPosition = new Vector3(0, number);
+            prefabC.GetComponent<ChoiceInfo>().pathNumberChoice = currentChoiceEvent.possibleChoices[i].choicePath; // change later
+            number -= 150;
+        }
+
+        while (currentChoiceChosen == null)
+        {
+            yield return null;
+            if (currentChoiceChosen != null)
+            {
+                Transform cDisplay = GameObject.Find("Choice Event Display").transform;
+                foreach (Transform choice in cDisplay)
+                {
+                    choice.gameObject.SetActive(false);
+                }
+                // then move onto next conversation or change the currentConvo;
+                yield return new WaitForSeconds(.5f); // temporary, maybe just add another line of dialogue
+                convoIndex++;
+                textPanel.text = string.Empty;
+                currentConvo = potentialPaths[currentPathNumber];
+                // if path number != prev path number do current = 0, else dont do anything
+                if(currentPathNumber != previousPathNumber)
+                {
+                    convoIndex = 0;
+                }
+                currentChoiceEvent = null;
+                StartCoroutine(typeText(currentConvo.conversations[convoIndex].convoText));
+                
+                break;
+            }
+        }
+        
+        print("you finished choosing");
         yield return null;
     }
 }

@@ -16,6 +16,7 @@ public class MarriageConversation : ScriptableObject
         public string convoText;
         public Sprite currentCharacterEmotion;
         public SpeakerInfo character;
+        public ChoiceEvent choiceEvent;
         public Action currentAction;
 
         [SerializeField]

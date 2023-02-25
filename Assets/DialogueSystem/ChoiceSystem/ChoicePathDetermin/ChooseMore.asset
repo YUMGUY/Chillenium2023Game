@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1a06e0e1ec55d42bb411ec34c40aef, type: 3}
+  m_Name: ChooseMore
+  m_EditorClassIdentifier: 
+  numberOfChoices: 2
+  choiceResource: {fileID: 5111851703529113549, guid: 9e73de74839f02e41a9f404fd45366ad, type: 3}
+  possibleChoices:
+  - choiceText: Hey...hey guys calm down
+    choicePath: 0
+  - choiceText: GUYS SHUT THE FUCK UP
+    choicePath: 1
