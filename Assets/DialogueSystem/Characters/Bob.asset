@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: 
   nameColor: {r: 1, g: 0, b: 0, a: 1}
+  characterLabel: 1

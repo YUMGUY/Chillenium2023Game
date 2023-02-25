@@ -8,5 +8,6 @@ public class SpeakerInfo : ScriptableObject
 {
     public string speakerName;
     public Color nameColor;
+    public int characterLabel;
     //potential text color associated with character
 }

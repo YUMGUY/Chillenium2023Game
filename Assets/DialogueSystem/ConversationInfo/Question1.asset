@@ -10,21 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b051c14639375041956645195bd5704, type: 3}
-  m_Name: BobAndAmy1
+  m_Name: Question1
   m_EditorClassIdentifier: 
   conversations:
-  - convoText: WHY ARE YOU SO UGLY
+  - convoText: UHHHH SHE'S UGLY WHAT DO I NEED TO SAY?
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     choiceEvent: {fileID: 0}
+    pickUpPoint: 0
     currentAction: 0
-  - convoText: WHY ARE YOU SO FAT
+  - convoText: OH YEAH HER MOM IS UGLY TOO...
     currentCharacterEmotion: {fileID: 0}
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
-    choiceEvent: {fileID: 11400000, guid: cb3680aac1be3624faad9c3bac78ef02, type: 2}
-    currentAction: 0
-  - convoText: WHY ARE YOU SO FATTTTTTTTTTTTTTTTTTT
-    currentCharacterEmotion: {fileID: 0}
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     choiceEvent: {fileID: 0}
+    pickUpPoint: 2
     currentAction: 0
