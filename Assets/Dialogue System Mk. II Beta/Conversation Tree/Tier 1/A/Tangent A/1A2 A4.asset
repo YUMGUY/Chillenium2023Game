@@ -16,9 +16,13 @@ MonoBehaviour:
     convoText: This is Tier 1 A 2 Tangent A 4
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 0}
+    typingSpeed: 0
     possibleNextTexts:
     - {fileID: 11400000, guid: d4fa52b350ba07f428c60ecc4c45d127, type: 2}
     NextTaskConditions: []
+    autoAdvance: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
     holdButtonState: 0
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 0
@@ -30,6 +34,8 @@ MonoBehaviour:
     CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    intensity_: 0
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     ShouldPlaySound: 0

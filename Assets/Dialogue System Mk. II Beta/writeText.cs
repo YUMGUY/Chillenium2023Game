@@ -29,6 +29,12 @@ public class writeText : MonoBehaviour
     [Header("Reactionary Variables")]
     public ScreenShake shaker;
 
+    private bool hasChoices;
+
+    public GameObject[] choiceButtonArr;
+
+    private int numOfButtons;
+
 
     private enum State
     {
@@ -38,48 +44,105 @@ public class writeText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        hasChoices = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (currentDialogue.convo.autoAdvance && convoStarted) {
-            if (state == State.COMPLETED) // if the line is completed
-            {
-                convoManager.ConvoCompleteCalc(currentDialogue, false);
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.Z) && convoStarted)
+        if (!hasChoices)
         {
-
-            if (state == State.COMPLETED) // if the line is completed
+            if (currentDialogue.convo.autoAdvance && convoStarted)
             {
-                convoManager.ConvoCompleteCalc(currentDialogue, false);
+                if (state == State.COMPLETED) // if the line is completed
+                {
+                    convoManager.ConvoCompleteCalc(currentDialogue, false, -1);
+                }
             }
-
-            else // in the midst of typing
+            else if (Input.GetKeyDown(KeyCode.Z) && convoStarted)
             {
-                StopAllCoroutines();
-                textPanel.text = currentDialogue.convo.convoText;
-                state = State.COMPLETED;
 
+                if (state == State.COMPLETED) // if the line is completed
+                {
+                    convoManager.ConvoCompleteCalc(currentDialogue, false, -1);
+                }
+
+                else // in the midst of typing
+                {
+                    StopAllCoroutines();
+                    textPanel.text = currentDialogue.convo.convoText;
+                    state = State.COMPLETED;
+
+                }
             }
         }
+        else {
+            if (convoStarted && state == State.COMPLETED) {
+                showChoices();
+            }
+        }
+        
+    }
+
+    public void showChoices() {
+
+        numOfButtons = currentDialogue.convo.buttonText.Length;
+
+        if (numOfButtons == 0) {
+            return;
+        }
+
+        //Debug.Log(numOfButtons);
+
+
+        //Debug.Log(choiceButtonArr[0]);
+
+        for (int i = 0; i < numOfButtons; i++) {
+
+            Debug.Log(choiceButtonArr[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().name);
+
+            choiceButtonArr[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = currentDialogue.convo.buttonText[i];
+            choiceButtonArr[i].SetActive(true);
+        }
+    }
+
+    public void choice1Button() {
+        for (int i = 0; i < numOfButtons; i++)
+        {
+            choiceButtonArr[i].SetActive(false);
+        }
+        convoManager.ConvoCompleteCalc(currentDialogue, false, 1);
+
+    }
+    public void choice2Button()
+    {
+        for (int i = 0; i < numOfButtons; i++)
+        {
+            choiceButtonArr[i].SetActive(false);
+        }
+        convoManager.ConvoCompleteCalc(currentDialogue, false, 2);
+    }
+    public void choice3Button()
+    {
+        for (int i = 0; i < numOfButtons; i++)
+        {
+            choiceButtonArr[i].SetActive(false);
+        }
+        convoManager.ConvoCompleteCalc(currentDialogue, false, 3);
     }
 
     public void holdUpButton() {
         if (convoStarted == true) {
             if (state == State.COMPLETED) {
-                convoManager.ConvoCompleteCalc(currentDialogue, true);
+                convoManager.ConvoCompleteCalc(currentDialogue, true, -1);
             }
             else // in the midst of typing
             {
                 StopAllCoroutines();
                 textPanel.text = currentDialogue.convo.convoText;
                 state = State.COMPLETED;
-                convoManager.ConvoCompleteCalc(currentDialogue, true);
+                convoManager.ConvoCompleteCalc(currentDialogue, true, -1);
             }
         }
     }
@@ -100,6 +163,14 @@ public class writeText : MonoBehaviour
         if (currentDialogue.convo.nameOfFlag != null && currentDialogue.convo.nameOfFlag != "")
         {
             gameManagerRef.raiseFlag(currentDialogue.convo.nameOfFlag);
+        }
+
+        if (currentDialogue.convo.ShouldLeadToChoice)
+        {
+            hasChoices = true;
+        }
+        else {
+            hasChoices = false;
         }
 
         QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
@@ -234,6 +305,15 @@ public class writeText : MonoBehaviour
             }
 
             QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
+
+            if (currentDialogue.convo.ShouldLeadToChoice)
+            {
+                hasChoices = true;
+            }
+            else
+            {
+                hasChoices = false;
+            }
 
             StartCoroutine(typeText(currentDialogue.convo.convoText));
         }

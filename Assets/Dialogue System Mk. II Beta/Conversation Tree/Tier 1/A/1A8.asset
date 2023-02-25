@@ -10,25 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 1A6
+  m_Name: 1A8
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 6 (You let him cook)
+    convoText: This is Tier 1 A 8, You chose option 1
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: bdb460c6cb9b29b4ab71d096b73da9fa, type: 2}
-    - {fileID: 11400000, guid: 4e21c2a9fc10e96438b56b673d767e79, type: 2}
+    - {fileID: 11400000, guid: 9e4a8de5adbca3144891dd3b1716c4b5, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 1
-    buttonText:
-    - You could say...
-    - Or this...?
+    ShouldLeadToChoice: 0
+    buttonText: []
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0

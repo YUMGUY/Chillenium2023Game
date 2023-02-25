@@ -35,6 +35,8 @@ public class newConvoManager : MonoBehaviour
 
         currTier = 0;
         writeTextRef.startConvo(shuffleConvos(currTier));
+
+        
     }
 
     // Update is called once per frame
@@ -51,7 +53,7 @@ public class newConvoManager : MonoBehaviour
         return originArr[Tier][chosenText];
     }
 
-    public void ConvoCompleteCalc(TextBox currDialogue, bool usedButton)
+    public void ConvoCompleteCalc(TextBox currDialogue, bool usedButton, int choiceButtonPressed)
     {
         //Here is where we perform any end-of-conversation calculations/figuring out where to go from here.
         int numOfConvosFromCurrent = currDialogue.convo.possibleNextTexts.Length;
@@ -77,7 +79,7 @@ public class newConvoManager : MonoBehaviour
             //Element 0 is default, keep this for the linear dialogue path
             //Element 1 is for you don't meet the requirements for the text box in Element 2
             //Element 2 is for the tangent text box that you could go to if you press the hold up button
-
+            //Element 3 and beyond is mapped to choices 1 2 and 3 in that order
 
             int NextConvoIndex = 0; // Default case
 
@@ -92,6 +94,9 @@ public class newConvoManager : MonoBehaviour
                 else {
                     NextConvoIndex = 1;
                 }
+            }
+            if (choiceButtonPressed > -1) {
+                NextConvoIndex = 2 + choiceButtonPressed;
             }
 
 

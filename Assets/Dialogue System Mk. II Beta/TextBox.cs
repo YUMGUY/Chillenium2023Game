@@ -27,6 +27,10 @@ public class TextBox : ScriptableObject
         [Header("Does the text move to the next box automatically?")]
         public bool autoAdvance;
 
+        [Header("Does this text lead to a choice?")]
+        public bool ShouldLeadToChoice;
+        public string[] buttonText;
+
         [Header("Is the Hold Up Button Enabled?")]
         public bool holdButtonState;
 
