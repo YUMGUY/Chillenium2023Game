@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 1558358597840967322}
   - component: {fileID: 1558358597840967328}
   m_Layer: 5
-  m_Name: Dialogue Manager Canvas
+  m_Name: Dialogue Manager Canvas (New)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

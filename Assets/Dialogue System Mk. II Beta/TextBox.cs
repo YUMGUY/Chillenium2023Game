@@ -47,6 +47,8 @@ public class TextBox : ScriptableObject
         [Header("Screen Shake")]
         public bool ShouldPlayShake;
         public int ShakeAtWhatCharIdx;
+        public float durationShake_;
+        public float intensity_;
 
         [Header("Screen Flash")]
         public bool ShouldPlayFlash;

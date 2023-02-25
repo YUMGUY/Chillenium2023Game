@@ -26,6 +26,9 @@ public class writeText : MonoBehaviour
 
     public Button QuestioningButton;
 
+    [Header("Reactionary Variables")]
+    public ScreenShake shaker;
+
 
     private enum State
     {
@@ -164,6 +167,7 @@ public class writeText : MonoBehaviour
                 if (charIndex == currentDialogue.convo.ShakeAtWhatCharIdx) {
                     // Make the screen shake!
                     Debug.Log("Screen shook");
+                    // screenshake script reference
                 }
             }
             if (currentDialogue.convo.ShouldPlayFlash) {
