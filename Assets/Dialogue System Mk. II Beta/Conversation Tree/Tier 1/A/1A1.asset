@@ -30,10 +30,12 @@ MonoBehaviour:
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
+    ShouldPlayShake: 1
+    ShakeAtWhatCharIdx: 3
+    durationShake_: 0.5
+    intensity_: 0.1
+    ShouldPlayFlash: 1
+    FlashAtWhatCharIdx: 3
     ShouldPlaySound: 0
     SoundAtWhatCharIdx: 0
     soundToPlay: {fileID: 0}
@@ -41,3 +43,8 @@ MonoBehaviour:
     AnimationAtWhatCharIdx: 0
     animToPlay: {fileID: 0}
     whichObjToAnim: {fileID: 0}
+    textColor_: {r: 1, g: 0, b: 0, a: 1}
+    inputFontSize: 91.31
+    isBold: 1
+    isWavy: 1
+    isWiggling: 0

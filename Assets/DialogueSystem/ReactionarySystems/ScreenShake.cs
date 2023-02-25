@@ -18,10 +18,11 @@ public class ScreenShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space ))
-        {
-            StartCoroutine(Shake(durationShake, magnitudeInput));
-        }
+        //if(Input.GetKeyDown(KeyCode.Space ))
+        //{
+        //    print("shook screen");
+        //    StartCoroutine(Shake(durationShake, magnitudeInput));
+        //}
     }
 
     public IEnumerator Shake(float duration, float magnitude)
