@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeakerInfo : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "New Speaker", menuName = "Dialogue_Data/New Speaker")]
+public class SpeakerInfo : ScriptableObject
+{
+    public string speakerName;
+    public Color nameColor;
+    //potential text color associated with character
 }
