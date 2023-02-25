@@ -16,15 +16,17 @@ MonoBehaviour:
     convoText: This is Tier 1 A 1
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 0}
+    typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: 827a8a4cf6356cb44ba3bd47dbd30ce8, type: 2}
     NextTaskConditions: []
+    autoAdvance: 0
     holdButtonState: 0
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: -0.1
     WifeHeartIncreaseInterval: -0.1
-    nameOfFlag: testflag
+    nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

@@ -16,8 +16,12 @@ MonoBehaviour:
     convoText: This is Tier 1 A 4
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
+    NextTaskConditions: []
+    autoAdvance: 0
+    holdButtonState: 0
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: 1

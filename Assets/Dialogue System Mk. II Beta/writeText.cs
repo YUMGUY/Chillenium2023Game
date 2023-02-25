@@ -185,6 +185,7 @@ public class writeText : MonoBehaviour
                 {
                     // Make the object animate!   
                     Debug.Log("Thing Animated");
+                    //currentDialogue.convo.animToPlay.Play();
                 }
             }
 

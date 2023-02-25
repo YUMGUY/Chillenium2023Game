@@ -16,7 +16,11 @@ MonoBehaviour:
     convoText: This is Tier 1 A 6 (You let him cook)
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    typingSpeed: 0.03
     possibleNextTexts: []
+    NextTaskConditions: []
+    autoAdvance: 0
+    holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0

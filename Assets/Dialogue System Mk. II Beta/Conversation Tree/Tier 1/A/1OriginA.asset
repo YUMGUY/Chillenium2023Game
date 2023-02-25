@@ -16,9 +16,11 @@ MonoBehaviour:
     convoText: This starts Tier 1 Origin A
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 0}
+    typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: 660e6d678e1b6de4d947b81d2bdb3b11, type: 2}
     NextTaskConditions: []
+    autoAdvance: 0
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
