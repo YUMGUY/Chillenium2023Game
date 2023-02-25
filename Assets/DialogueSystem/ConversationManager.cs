@@ -35,6 +35,9 @@ public class ConversationManager : MonoBehaviour
     public QuestioningSystem questioningSystem;
     public bool questioningCurrently;
 
+    [Header("Reaction Variables")]
+    public ScreenShake shaker;
+
     //[Header("Controls Characters")]
     // public CharacterController characterController;
     private enum State
@@ -109,7 +112,9 @@ public class ConversationManager : MonoBehaviour
 
         // choice system takes place
         currentChoiceEvent = currentConvo.conversations[convoIndex].choiceEvent;
+        List<Reactions> reactionEvents = currentConvo.conversations[convoIndex].reactions_;
         
+
 
         int charIndex = 0;
 
@@ -122,6 +127,14 @@ public class ConversationManager : MonoBehaviour
             if (++charIndex == text.Length)
             {
                 // print("finished");
+                foreach (Reactions r in reactionEvents)
+                {
+                    if(r.atEnd && r.type_ == "Shake")
+                    {
+                        print("shook");
+                        StartCoroutine(shaker.Shake(r.duration_, r.magnitude_));
+                    }
+                }
                 state = State.COMPLETED;
                 break;
             }
