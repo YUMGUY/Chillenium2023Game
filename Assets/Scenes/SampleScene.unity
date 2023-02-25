@@ -778,6 +778,7 @@ GameObject:
   - component: {fileID: 826337210}
   - component: {fileID: 826337209}
   - component: {fileID: 826337208}
+  - component: {fileID: 826337211}
   m_Layer: 5
   m_Name: Questioning Button
   m_TagString: Untagged
@@ -849,7 +850,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 826337209}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 826337211}
+        m_TargetAssemblyTypeName: QuestioningSystem, Assembly-CSharp
+        m_MethodName: QuestionCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &826337209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,6 +901,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826337206}
   m_CullTransparentMesh: 1
+--- !u!114 &826337211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826337206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91cbe895dad634242bd3cdfe94808b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refConvo: {fileID: 1816659375}
+  questioningConversation: {fileID: 11400000, guid: 1df7733b3f2442c4d98fa3e94d1cc54d, type: 2}
+  typingSpeed: 0.05
+  textPanel: {fileID: 488779479}
+  namePanel: {fileID: 1971780655}
+  questionDialogueIndex: 0
+  storedConvoIndex: 0
 --- !u!1 &1024311614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1155,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1c510ecdd78ee7b4982a4bc740b52260, type: 2}
   - {fileID: 11400000, guid: 8d11f415fceb0964cb9dd2ece80e3019, type: 2}
   currentConvo: {fileID: 0}
+  convoIndex: 0
   currentPathNumber: 0
   previousPathNumber: 0
   currentChoiceEvent: {fileID: 0}
@@ -1132,6 +1165,8 @@ MonoBehaviour:
   character1: {fileID: 1024311614}
   character2: {fileID: 0}
   convoStarted: 0
+  questioningSystem: {fileID: 0}
+  questioningCurrently: 0
 --- !u!1 &1858798390
 GameObject:
   m_ObjectHideFlags: 0

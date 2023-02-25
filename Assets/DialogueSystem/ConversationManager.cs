@@ -13,7 +13,7 @@ public class ConversationManager : MonoBehaviour
     [Header("Conversation Scene Info")]
     public List<MarriageConversation> potentialPaths;
     public MarriageConversation currentConvo;
-    private int convoIndex = 0;
+    public int convoIndex = 0;
     private State state = State.COMPLETED;
 
     [Header("Choice System")]
@@ -30,6 +30,9 @@ public class ConversationManager : MonoBehaviour
     public GameObject character2;
     public bool convoStarted;
 
+    [Header("Interrogation")]
+    public QuestioningSystem questioningSystem;
+    public bool questioningCurrently;
 
     //[Header("Controls Characters")]
     // public CharacterController characterController;
@@ -86,7 +89,7 @@ public class ConversationManager : MonoBehaviour
         StartCoroutine(typeText(currentConvo.conversations[convoIndex].convoText));
     }
 
-    private IEnumerator typeText(string text)
+    public IEnumerator typeText(string text)
     {
         namePanel.text = currentConvo.conversations[convoIndex].character.name;
         namePanel.color = currentConvo.conversations[convoIndex].character.nameColor;
@@ -129,7 +132,12 @@ public class ConversationManager : MonoBehaviour
 
     public void NextLine() // controls the value of convoIndex, which is the marker for which speaker is speaking
     {
-        // 
+        // check flag
+        if(questioningCurrently == true)
+        {
+            print("Currently questioning");
+            return;
+        }
 
         if(currentChoiceEvent != null)
         {

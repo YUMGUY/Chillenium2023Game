@@ -17,6 +17,9 @@ public class MarriageConversation : ScriptableObject
         public Sprite currentCharacterEmotion;
         public SpeakerInfo character;
         public ChoiceEvent choiceEvent;
+
+        [Header("Questioning System Var")]
+        public int pickUpPoint;
         public Action currentAction;
 
         [SerializeField]
