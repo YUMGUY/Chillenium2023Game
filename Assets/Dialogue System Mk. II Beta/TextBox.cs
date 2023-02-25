@@ -19,6 +19,12 @@ public class TextBox : ScriptableObject
         [Header("List all possible conversation branches from this text")]
         public TextBox[] possibleNextTexts;
 
+        [Header("For each above possible convo, list a condition for them to be taken. Index 0 is the default")]
+        public string[] NextTaskConditions;
+
+        [Header("Is the Hold Up Button Enabled?")]
+        public bool holdButtonState;
+
         [Header("Heart Meter Effects")]
         public bool IncreaseHusbandHeart;
         public bool IncreaseWifeHeart;

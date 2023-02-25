@@ -24,6 +24,8 @@ public class writeText : MonoBehaviour
     public GameObject rightCharSlot;
     public GameObject centerCharSlot;
 
+    public Button QuestioningButton;
+
 
     private enum State
     {
@@ -41,9 +43,10 @@ public class writeText : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && convoStarted == true)
         {
+
             if (state == State.COMPLETED) // if the line is completed
             {
-                convoManager.ConvoCompleteCalc(currentDialogue);
+                convoManager.ConvoCompleteCalc(currentDialogue, false);
             }
 
             else // in the midst of typing
@@ -52,6 +55,21 @@ public class writeText : MonoBehaviour
                 textPanel.text = currentDialogue.convo.convoText;
                 state = State.COMPLETED;
 
+            }
+        }
+    }
+
+    public void holdUpButton() {
+        if (convoStarted == true) {
+            if (state == State.COMPLETED) {
+                convoManager.ConvoCompleteCalc(currentDialogue, true);
+            }
+            else // in the midst of typing
+            {
+                StopAllCoroutines();
+                textPanel.text = currentDialogue.convo.convoText;
+                state = State.COMPLETED;
+                convoManager.ConvoCompleteCalc(currentDialogue, true);
             }
         }
     }
@@ -68,6 +86,13 @@ public class writeText : MonoBehaviour
         leftCharSlot.SetActive(currentDialogue.convo.LeftCharOn);
         rightCharSlot.SetActive(currentDialogue.convo.RightCharOn);
         centerCharSlot.SetActive(currentDialogue.convo.CenterCharOn);
+
+        if (currentDialogue.convo.nameOfFlag != null && currentDialogue.convo.nameOfFlag != "")
+        {
+            gameManagerRef.raiseFlag(currentDialogue.convo.nameOfFlag);
+        }
+
+        QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
 
 
         // enable ui 
@@ -191,6 +216,8 @@ public class writeText : MonoBehaviour
             if (currentDialogue.convo.nameOfFlag != null && currentDialogue.convo.nameOfFlag != "") {
                 gameManagerRef.raiseFlag(currentDialogue.convo.nameOfFlag);
             }
+
+            QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
 
             StartCoroutine(typeText(currentDialogue.convo.convoText));
         }

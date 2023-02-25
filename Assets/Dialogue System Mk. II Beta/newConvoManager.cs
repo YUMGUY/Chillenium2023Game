@@ -6,6 +6,7 @@ public class newConvoManager : MonoBehaviour
 {
 
     public writeText writeTextRef;
+    public GameManager gameManagerRef;
 
     private int currTier;
     public int maxConvoTier = 3;
@@ -50,7 +51,7 @@ public class newConvoManager : MonoBehaviour
         return originArr[Tier][chosenText];
     }
 
-    public void ConvoCompleteCalc(TextBox currDialogue)
+    public void ConvoCompleteCalc(TextBox currDialogue, bool usedButton)
     {
         //Here is where we perform any end-of-conversation calculations/figuring out where to go from here.
         int numOfConvosFromCurrent = currDialogue.convo.possibleNextTexts.Length;
@@ -70,11 +71,35 @@ public class newConvoManager : MonoBehaviour
 
         if (numOfConvosFromCurrent != 0)
         {
-            int tempDecidingNumber = 0;
 
-            newDialogue = currDialogue.convo.possibleNextTexts[tempDecidingNumber];
+            // This part chooses the next text box to display based on the Possible Next Texts array
+            // Please keep the following standard in mind when assigning elements to that array:
+            //Element 0 is default, keep this for the linear dialogue path
+            //Element 1 is for you don't meet the requirements for the text box in Element 2
+            //Element 2 is for the tangent text box that you could go to if you press the hold up button
+
+
+            int NextConvoIndex = 0; // Default case
+
+            if (usedButton) {
+
+                string flagRequirement = currDialogue.convo.possibleNextTexts[2].convo.NextTaskConditions[2];
+                bool flagValue = (bool)gameManagerRef.flagManager[flagRequirement];
+                if (flagValue)
+                {
+                    NextConvoIndex = 2;
+                }
+                else {
+                    NextConvoIndex = 1;
+                }
+            }
+
+
+            newDialogue = currDialogue.convo.possibleNextTexts[NextConvoIndex];
 
         }
+
+
         writeTextRef.NextLine(newDialogue);
 
     }

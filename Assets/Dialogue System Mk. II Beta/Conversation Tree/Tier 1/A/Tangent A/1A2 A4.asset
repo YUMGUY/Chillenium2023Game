@@ -10,25 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 1A2
+  m_Name: 1A2 A4
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 2
+    convoText: This is Tier 1 A 2 Tangent A 4
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 0}
     possibleNextTexts:
-    - {fileID: 11400000, guid: 6e1dfb9127eb88b478feab84eed68791, type: 2}
-    - {fileID: 11400000, guid: 0b7fa91d540d890468ae65ffdc403efc, type: 2}
-    - {fileID: 11400000, guid: 2661914c17dd9ab408907f3f2d0d3850, type: 2}
-    NextTaskConditions:
-    - default
-    - failure
-    - testflag
-    holdButtonState: 1
+    - {fileID: 11400000, guid: d4fa52b350ba07f428c60ecc4c45d127, type: 2}
+    NextTaskConditions: []
+    holdButtonState: 0
     IncreaseHusbandHeart: 1
-    IncreaseWifeHeart: 1
+    IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0.5
-    WifeHeartIncreaseInterval: 0.5
+    WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1

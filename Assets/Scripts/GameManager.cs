@@ -25,13 +25,15 @@ public class GameManager : MonoBehaviour
     }
 
     public void initializeHash(Hashtable Hash) {
+        Hash.Clear();
         for (int i = 0; i < flagsList.Length; i++) {
-            Hash.Add(flagsList[i], 0); //Creates hash with all flag names and initializes them all to 0.
+            Debug.Log(flagsList[i]);
+            Hash.Add(flagsList[i], false); //Creates hash with all flag names and initializes them all to 0.
         }
     }
 
     public void raiseFlag(string nameOfFlag) {
-        flagManager[nameOfFlag] = 1;
+        flagManager[nameOfFlag] = true;
     }
 
     public void modifyHeartPos(bool changeHus, bool changeWife, float husFactor, float wifeFactor) {

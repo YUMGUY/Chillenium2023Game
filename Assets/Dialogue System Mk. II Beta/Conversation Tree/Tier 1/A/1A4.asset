@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: 1A4
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 4 (You let him cook)
+    convoText: This is Tier 1 A 4
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: 1
     WifeHeartIncreaseInterval: 1
+    nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
