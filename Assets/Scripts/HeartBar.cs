@@ -22,11 +22,11 @@ public class HeartBar : MonoBehaviour
 
     [SerializeField]
     [Range(0.0f, 1.0f)]
-    private float HusBarPercent = 0.0f;
+    public float HusBarPercent = 0.0f;
 
     [SerializeField]
     [Range(0.0f, 1.0f)]
-    private float WifeBarPercent = 0.0f;
+    public float WifeBarPercent = 0.0f;
 
     
 

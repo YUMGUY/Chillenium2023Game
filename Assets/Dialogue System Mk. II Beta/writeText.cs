@@ -13,6 +13,7 @@ public class writeText : MonoBehaviour
     //public float typingSpeed;
     public TextMeshProUGUI textPanel;
     public TextMeshProUGUI namePanel;
+    public CanvasGroup notepadCanvas;
 
     private State state = State.COMPLETED;
 
@@ -41,6 +42,7 @@ public class writeText : MonoBehaviour
     [Header("Audio Sound Effects")]
     public AudioSource textSFXPlayer;
     public AudioSource genSFXPlayer;
+    public AudioSource jukeboxPlayer;
 
     [Header("Notepad properties")]
     public bool notePadOpened;
@@ -96,19 +98,23 @@ public class writeText : MonoBehaviour
                 }
             }
         }
-        else {
-            if (convoStarted && state == State.COMPLETED) {
+        else
+        {
+            if (convoStarted && state == State.COMPLETED)
+            {
                 showChoices();
             }
         }
-        
+
     }
 
-    public void showChoices() {
+    public void showChoices()
+    {
 
         numOfButtons = currentDialogue.convo.buttonText.Length;
 
-        if (numOfButtons == 0) {
+        if (numOfButtons == 0)
+        {
             return;
         }
 
@@ -117,7 +123,8 @@ public class writeText : MonoBehaviour
 
         //Debug.Log(choiceButtonArr[0]);
 
-        for (int i = 0; i < numOfButtons; i++) {
+        for (int i = 0; i < numOfButtons; i++)
+        {
 
             Debug.Log(choiceButtonArr[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().name);
 
@@ -126,7 +133,8 @@ public class writeText : MonoBehaviour
         }
     }
 
-    public void choice1Button() {
+    public void choice1Button()
+    {
         for (int i = 0; i < numOfButtons; i++)
         {
             choiceButtonArr[i].SetActive(false);
@@ -151,9 +159,12 @@ public class writeText : MonoBehaviour
         convoManager.ConvoCompleteCalc(currentDialogue, false, 3);
     }
 
-    public void holdUpButton() {
-        if (convoStarted == true) {
-            if (state == State.COMPLETED) {
+    public void holdUpButton()
+    {
+        if (convoStarted == true)
+        {
+            if (state == State.COMPLETED)
+            {
                 convoManager.ConvoCompleteCalc(currentDialogue, true, -1);
             }
             else // in the midst of typing
@@ -171,7 +182,8 @@ public class writeText : MonoBehaviour
         currentDialogue = currDialogue;
         convoStarted = true;
 
-        if (currentDialogue.convo.IncreaseHusbandHeart || currentDialogue.convo.IncreaseWifeHeart) {
+        if (currentDialogue.convo.IncreaseHusbandHeart || currentDialogue.convo.IncreaseWifeHeart)
+        {
             gameManagerRef.modifyHeartPos(currDialogue.convo.IncreaseHusbandHeart, currDialogue.convo.IncreaseWifeHeart, currDialogue.convo.HusbandHeartIncreaseInterval, currDialogue.convo.WifeHeartIncreaseInterval);
         }
 
@@ -188,11 +200,12 @@ public class writeText : MonoBehaviour
         {
             hasChoices = true;
         }
-        else {
+        else
+        {
             hasChoices = false;
         }
 
-        
+
 
         QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
 
@@ -212,7 +225,8 @@ public class writeText : MonoBehaviour
         {
             namePanel.text = currentDialogue.convo.character.name;
         }
-        catch {
+        catch
+        {
             namePanel.text = "???";
         }
 
@@ -220,46 +234,49 @@ public class writeText : MonoBehaviour
         {
             namePanel.color = currentDialogue.convo.character.nameColor;
         }
-        catch { 
+        catch
+        {
             namePanel.color = Color.white;
         }
 
 
         textPanel.text = "";
-        
+
         state = State.TALKING;
 
         try
         {
             int label = currentDialogue.convo.character.characterLabel;
         }
-        catch {
+        catch
+        {
             int label = 0;
         }
 
 
         try
         {
-            for(int i = 0; i< characterBodies.Length; ++i) 
-            {   
-                if(currentDialogue.convo.currentCharacterEmotions[i] == null) { continue; }
+            for (int i = 0; i < characterBodies.Length; ++i)
+            {
+                if (currentDialogue.convo.currentCharacterEmotions[i] == null) { continue; }
                 characterBodies[i].sprite = currentDialogue.convo.currentCharacterEmotions[i];
             }
 
         }
-        catch {
+        catch
+        {
             print("not enough emotions for all characters");
         }
 
-        
+
         //showEmotion(emotionParam, label);
         // apply blanket text changes
         try
-        {   
-            if(currentDialogue.convo.textColor_.a <= 0 ) { textPanel.color = Color.white;  }
-            else { textPanel.color = currentDialogue.convo.textColor_;  }
-            
-            if(currentDialogue.convo.inputFontSize <= 0)
+        {
+            if (currentDialogue.convo.textColor_.a <= 0) { textPanel.color = Color.black; }
+            else { textPanel.color = currentDialogue.convo.textColor_; }
+
+            if (currentDialogue.convo.inputFontSize <= 0)
             {
                 textPanel.fontSize = 36f;
             }
@@ -267,8 +284,8 @@ public class writeText : MonoBehaviour
             {
                 textPanel.fontSize = currentDialogue.convo.inputFontSize;
             }
-            
-            if(currentDialogue.convo.isBold)
+
+            if (currentDialogue.convo.isBold)
             {
                 textPanel.fontStyle = FontStyles.Bold;
             }
@@ -277,12 +294,12 @@ public class writeText : MonoBehaviour
                 textPanel.fontStyle = FontStyles.Normal;
             }
 
-            if(currentDialogue.convo.isWavy){ textEmotioner.wavyText = true; }
-            if(currentDialogue.convo.isWiggling) { textEmotioner.wiggleText = true; }
+            if (currentDialogue.convo.isWavy) { textEmotioner.wavyText = true; }
+            if (currentDialogue.convo.isWiggling) { textEmotioner.wiggleText = true; }
         }
         catch
         {
-            textPanel.color = Color.white;
+            textPanel.color = Color.black;
             textPanel.fontSize = 36f;
         }
 
@@ -291,15 +308,18 @@ public class writeText : MonoBehaviour
         while (state != State.COMPLETED)
         {
 
-            if (currentDialogue.convo.ShouldPlayShake) {
-                if (charIndex == currentDialogue.convo.ShakeAtWhatCharIdx) {
+            if (currentDialogue.convo.ShouldPlayShake)
+            {
+                if (charIndex == currentDialogue.convo.ShakeAtWhatCharIdx)
+                {
                     // Make the screen shake!
                     Debug.Log("Screen shook");
                     // screenshake script reference
                     StartCoroutine(shaker.Shake(currentDialogue.convo.durationShake_, currentDialogue.convo.intensity_));
                 }
             }
-            if (currentDialogue.convo.ShouldPlayFlash) {
+            if (currentDialogue.convo.ShouldPlayFlash)
+            {
                 if (charIndex == currentDialogue.convo.FlashAtWhatCharIdx)
                 {
                     // Make the screen flash!   
@@ -307,7 +327,8 @@ public class writeText : MonoBehaviour
                     flasher.flashAnimator.SetTrigger("Flash");
                 }
             }
-            if (currentDialogue.convo.ShouldPlaySound) {
+            if (currentDialogue.convo.ShouldPlaySound)
+            {
                 if (charIndex == currentDialogue.convo.SoundAtWhatCharIdx)
                 {
                     // Play a sound!   
@@ -315,14 +336,15 @@ public class writeText : MonoBehaviour
                     genSFXPlayer.PlayOneShot(currentDialogue.convo.soundToPlay);
                 }
             }
-            if (currentDialogue.convo.ShouldPlayAnimation) {
+            if (currentDialogue.convo.ShouldPlayAnimation)
+            {
                 if (charIndex == currentDialogue.convo.AnimationAtWhatCharIdx)
                 {
                     // Make the object animate!   
                     Debug.Log("Thing Animated");
                     //currentDialogue.convo.animToPlay.Play();
                     //currentDialogue.convo.whichObjToAnim.SetTrigger("hop");
-                    for(int i = 0; i < animatorChars.Length; ++i)
+                    for (int i = 0; i < animatorChars.Length; ++i)
                     {
                         AnimationClip[] clips = animatorChars[i].runtimeAnimatorController.animationClips;
                         foreach (AnimationClip clip in clips)
@@ -334,7 +356,7 @@ public class writeText : MonoBehaviour
                                 animatorChars[i].Play(clip.name);
                             }
                         }
-                    }  
+                    }
                 }
             }
 
@@ -342,19 +364,40 @@ public class writeText : MonoBehaviour
             // add audio clip of text here
             try
             {
-                
-                if(currentDialogue.convo.ShouldPlayTextSound && text[charIndex] != ' ') 
-                { 
-                   // print("play text sound");
+
+                if (currentDialogue.convo.ShouldPlayTextSound && text[charIndex] != ' ')
+                {
+                    // print("play text sound");
                     textSFXPlayer.clip = currentDialogue.convo.textSound;
                     textSFXPlayer.Play();
                 }
-                    
+
             }
             catch
             {
                 print("Either missing audio source or no audio clip is provided");
             }
+
+            try
+            {
+                if (charIndex == currentDialogue.convo.musicAtWhatCharIdx)
+                {
+                    if (currentDialogue.convo.ShouldUpdateBGM)
+                    {
+                        jukeboxPlayer.Stop();
+                        if (currentDialogue.convo.musicToPlay != null) {
+                            jukeboxPlayer.clip = currentDialogue.convo.musicToPlay;
+                            jukeboxPlayer.Play();
+                            jukeboxPlayer.loop = true;
+                        }
+                        
+                    }
+                }
+            }
+            catch { 
+                
+            }
+
 
             textPanel.text += text[charIndex];
             yield return new WaitForSeconds(currentDialogue.convo.typingSpeed);
@@ -370,7 +413,7 @@ public class writeText : MonoBehaviour
         yield return null;
     }
 
-    
+
 
     public void NextLine(TextBox newDialogue) // controls the value of convoIndex, which is the marker for which speaker is speaking
     {
@@ -394,7 +437,8 @@ public class writeText : MonoBehaviour
             rightCharSlot.SetActive(currentDialogue.convo.RightCharOn);
             centerCharSlot.SetActive(currentDialogue.convo.CenterCharOn);
 
-            if (currentDialogue.convo.nameOfFlag != null && currentDialogue.convo.nameOfFlag != "") {
+            if (currentDialogue.convo.nameOfFlag != null && currentDialogue.convo.nameOfFlag != "")
+            {
                 gameManagerRef.raiseFlag(currentDialogue.convo.nameOfFlag);
             }
 
@@ -414,7 +458,7 @@ public class writeText : MonoBehaviour
 
         else
         {
-            print("end of dialogue for now");
+            print("Jump to Ending");
             textPanel.text = string.Empty;
             // temporary disappearance of dialogue box and characters
             /*
@@ -427,19 +471,29 @@ public class writeText : MonoBehaviour
             */
 
             convoStarted = false;
+
+            gameManagerRef.gameEnd();
         }
     }
 
     public void OpenNotePad()
     {
+        /*
         // count flags first to determine page 1 or page 2
         int number = gameManagerRef.flagManager.Count;
         // do later
-        gameManagerRef.flagManager.Keys.ToString();
+        gameManagerRef.flagManager.Keys.ToString();*/
+        notepadCanvas.alpha = 1;
+        notepadCanvas.blocksRaycasts = true;
+
         notePadOpened = true;
     }
     public void CloseNotePad()
     {
+
+        notepadCanvas.alpha = 0;
+        notepadCanvas.blocksRaycasts = false;
+
         notePadOpened = false;
     }
 }

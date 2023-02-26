@@ -8,13 +8,19 @@ public class newConvoManager : MonoBehaviour
     public writeText writeTextRef;
     public GameManager gameManagerRef;
 
-    private int currTier;
-    public int maxConvoTier = 3;
+    public int currTier;
+    public int maxConvoTier = 4;
 
     private List<TextBox[]> originArr;
     public TextBox[] originArrForTierOne;
     public TextBox[] originArrForTierTwo;
     public TextBox[] originArrForTierThree;
+
+    public TextBox prologueOrigin;
+    public TextBox finaleOrigin;
+    public TextBox tier3Origin;
+
+    private List<TextBox> listOfRoutesToGetThrough; //Per tier
 
     //private TextBox currDialogue;
 
@@ -27,6 +33,9 @@ public class newConvoManager : MonoBehaviour
         if (originArrForTierOne == null) {
             Debug.Log("uh oh");
         }*/
+
+        listOfRoutesToGetThrough = new List<TextBox>();
+
         originArr = new List<TextBox[]>();
 
         originArr.Add(originArrForTierOne);
@@ -34,8 +43,11 @@ public class newConvoManager : MonoBehaviour
         originArr.Add(originArrForTierThree);
 
         currTier = 0;
-        writeTextRef.startConvo(shuffleConvos(currTier));
+        writeTextRef.startConvo(prologueOrigin);
 
+        
+        //Comment above line and uncomment below to start at specific tier
+        //writeTextRef.startConvo(shuffleConvos(currTier));
         
     }
 
@@ -45,12 +57,54 @@ public class newConvoManager : MonoBehaviour
         //currDialogue = writeTextRef.currentDialogue;
     }
 
-    public TextBox shuffleConvos(int Tier) {
-       // int lengthOfOriginArr = originArr[Tier].Length;
-        int lengthOfOriginArr = 0; // ----------------------------This is debug, replace with line above for final product
-        int chosenText = Random.Range(0, lengthOfOriginArr);
-        Debug.Log("The chosen origin was Tier " + (Tier+1) + " with the text: " + originArr[Tier][chosenText].convo.convoText);
-        return originArr[Tier][chosenText];
+    public List<TextBox> shuffleConvos(int Tier) {
+        int lengthOfOriginArr = originArr[Tier-1].Length;
+        //int lengthOfOriginArr = 0; // ----------------------------This is debug, replace with line above for final product
+
+        int howManyRoutesToPull = 0;
+
+        if (Tier == 1)
+        {
+            howManyRoutesToPull = 3;
+        }
+        else if (Tier == 2)
+        {
+            howManyRoutesToPull = 2;
+        }
+        else if (Tier == 3) { 
+            howManyRoutesToPull = 1;
+        }
+
+        List<TextBox> ListOfChosenRoutes = new List<TextBox>();
+
+        int chosenText;
+
+        List<TextBox> ListOfPossibleRoutes = new List<TextBox>();
+
+        Debug.Log(Tier - 1);
+        for (int i = 0; i < originArr[Tier - 1].Length; i++) { 
+
+            ListOfPossibleRoutes.Add(originArr[Tier - 1][i]);
+            Debug.Log("Current Tier: " + Tier + " and idx: " + i);
+        }
+        int ListOfPossibleRoutesSize = originArr[Tier - 1].Length;
+
+        for (int i = 0; i < howManyRoutesToPull; i++) {
+
+            chosenText = Random.Range(0, ListOfPossibleRoutesSize);
+            ListOfChosenRoutes.Add(ListOfPossibleRoutes[chosenText]);
+
+            ListOfPossibleRoutes.Remove(ListOfPossibleRoutes[chosenText]);
+            ListOfPossibleRoutesSize--;
+        }
+
+        foreach (TextBox origin in ListOfChosenRoutes) {
+            Debug.Log(origin.convo.convoText);
+        }
+
+        //int chosenText = Random.Range(0, lengthOfOriginArr);
+        //Debug.Log("The chosen origin was Tier " + (Tier) + " with the text: " + originArr[Tier-1][chosenText].convo.convoText);
+        return ListOfChosenRoutes;
     }
 
     public void ConvoCompleteCalc(TextBox currDialogue, bool usedButton, int choiceButtonPressed)
@@ -58,12 +112,51 @@ public class newConvoManager : MonoBehaviour
         //Here is where we perform any end-of-conversation calculations/figuring out where to go from here.
         int numOfConvosFromCurrent = currDialogue.convo.possibleNextTexts.Length;
 
-        if (currTier < (maxConvoTier-1) && numOfConvosFromCurrent == 0) {
-            currTier++;
-            Debug.Log("Called shuffle with Tier " + currTier);
-            writeTextRef.startConvo(shuffleConvos(currTier));
-            return;
+        if (numOfConvosFromCurrent == 0) {
+
+
+            if (listOfRoutesToGetThrough.Count != 0)
+            {
+                Debug.Log("1 listOfRoutes Count " + listOfRoutesToGetThrough.Count);
+
+                listOfRoutesToGetThrough.RemoveAt(0);
+
+                if (listOfRoutesToGetThrough.Count == 0)
+                {
+                    if (currTier < (maxConvoTier)) {
+                        currTier++;
+                        Debug.Log("Called shuffle with Tier " + currTier);
+                        listOfRoutesToGetThrough = shuffleConvos(currTier);
+                        Debug.Log("2 listOfRoutes Count " + listOfRoutesToGetThrough.Count);
+                        writeTextRef.startConvo(listOfRoutesToGetThrough[0]);
+                        return;
+                    }
+                    
+                }
+                else {
+                    writeTextRef.startConvo(listOfRoutesToGetThrough[0]);
+                }
+
+
+                Debug.Log("Here make sure you go to finale tier");
+                
+
+                return;
+            }
+            else if (currTier < (maxConvoTier))
+            {
+                currTier++;
+                Debug.Log("Called shuffle with Tier " + currTier);
+                listOfRoutesToGetThrough = shuffleConvos(currTier);
+                Debug.Log("3 listOfRoutes Count " + listOfRoutesToGetThrough.Count);
+                writeTextRef.startConvo(listOfRoutesToGetThrough[0]);
+                return;
+            }
+
+
         }
+
+        
 
 
         //currentDialogue.convo.PossibleNextTexts
@@ -107,5 +200,29 @@ public class newConvoManager : MonoBehaviour
 
         writeTextRef.NextLine(newDialogue);
 
+    }
+
+    public void startEndSequence(int endingIndex) {
+        currTier = 4;
+
+        if (endingIndex < 0)
+        {
+            //Got best ending, hearts met
+            writeTextRef.startConvo(finaleOrigin);
+        }
+        else if (endingIndex == 1)
+        {
+            //Got husband ending
+            writeTextRef.startConvo(finaleOrigin);
+        }
+        else if (endingIndex == 2)
+        {
+            //Got wife ending
+            writeTextRef.startConvo(finaleOrigin);
+        }
+        else {
+            //Got generic divorce ending
+            writeTextRef.startConvo(finaleOrigin);
+        }
     }
 }

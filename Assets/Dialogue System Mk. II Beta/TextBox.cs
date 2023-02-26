@@ -63,7 +63,11 @@ public class TextBox : ScriptableObject
         public bool ShouldPlaySound;
         public int SoundAtWhatCharIdx;
         public AudioClip soundToPlay;
-        
+
+        [Header("BGM Effect")]
+        public bool ShouldUpdateBGM;
+        public int musicAtWhatCharIdx;
+        public AudioClip musicToPlay;
 
         [Header("Dialogue Anim")]
         public bool ShouldPlayAnimation;
