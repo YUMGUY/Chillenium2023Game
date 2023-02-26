@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginB
+  m_Name: 2OriginC 5
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Yeah bro I\u2019m always free to talk about my bro."
+    convoText: "I didn\u2019t tell you this, but she\u2019s even saving up in a secret
+      bank account!"
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: ede7fa8d2eb8be54c82a82954c17c2ff, type: 2}
+    - {fileID: 11400000, guid: 4e89d7a183efa214585e6b63cbad3030, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0

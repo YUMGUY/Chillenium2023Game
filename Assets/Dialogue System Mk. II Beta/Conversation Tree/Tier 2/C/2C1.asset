@@ -10,19 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginB
+  m_Name: 2C1
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Yeah bro I\u2019m always free to talk about my bro."
+    convoText: "Just make it quick. I\u2019m a busy man hohoho."
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: ede7fa8d2eb8be54c82a82954c17c2ff, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 4995bea736178aa44855c10e81667be1, type: 2}
+    - {fileID: 11400000, guid: 3f503ee56a3e6f34db4a014978bd6535, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
+    ShouldLeadToChoice: 1
+    buttonText:
+    - Does Italy ring any memories for you?
+    - What is her fascination with Italy?
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0

@@ -10,19 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginB
+  m_Name: 2OriginB 6
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Yeah bro I\u2019m always free to talk about my bro."
+    convoText: ' It makes my head hurt thinking about how much he has to deal with
+      bro.'
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: ede7fa8d2eb8be54c82a82954c17c2ff, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 5274cf567ab5ce849aa31c2ad674aff8, type: 2}
+    - {fileID: 11400000, guid: 9756d5fcefe3631478f7d600a22efc56, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
+    ShouldLeadToChoice: 1
+    buttonText:
+    - What does he have to deal with?
+    - Does he complain to you often?
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0

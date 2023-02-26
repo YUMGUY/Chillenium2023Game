@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginB
+  m_Name: 2OriginC 11
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Yeah bro I\u2019m always free to talk about my bro."
+    convoText: "One day she\u2019ll admit her true feelings for me and leave that
+      husband of hers."
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: ede7fa8d2eb8be54c82a82954c17c2ff, type: 2}
+    - {fileID: 11400000, guid: f78e04f8501ba06418eb231fa3235f7e, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0

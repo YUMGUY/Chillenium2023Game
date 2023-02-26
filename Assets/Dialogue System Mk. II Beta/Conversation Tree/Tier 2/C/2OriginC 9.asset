@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginB
+  m_Name: 2OriginC 9
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Yeah bro I\u2019m always free to talk about my bro."
+    convoText: Ah that takes me back, she and I used to explore the Italian countryside
+      as kids.
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: ede7fa8d2eb8be54c82a82954c17c2ff, type: 2}
+    - {fileID: 11400000, guid: 88ce50369d34bcd4996fb31f6eefe484, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
