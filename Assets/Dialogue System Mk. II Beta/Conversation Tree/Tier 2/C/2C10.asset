@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2A27
+  m_Name: 2C10
   m_EditorClassIdentifier: 
   convo:
-    convoText: And don't get me started on supermarket prices!
+    convoText: Sometimes the conversation will be steered to require a third-party's
+      input on the matter. Enjoy these unique encounters and try to keep them on
+      topic!
     currentCharacterEmotions:
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 21300000, guid: 0840365aabe0b4b44a92e15afa7c11c0, type: 3}
-    character: {fileID: 11400000, guid: 1c661c21beed46448894483453c1deae, type: 2}
+    - {fileID: 21300000, guid: c1dbe8f2dc0a67e49a8de20a31a40d2c, type: 3}
+    character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 12fee5e96a836234695b6c42dc8b21cd, type: 2}
+    - {fileID: 11400000, guid: 2c39a7169634ac6498ae5219f35cc458, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -32,8 +34,8 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
-    RightCharOn: 0
+    LeftCharOn: 1
+    RightCharOn: 1
     CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
@@ -47,13 +49,16 @@ MonoBehaviour:
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
-    ShouldPlayAnimation: 0
+    ShouldPlayAnimation: 1
     AnimationAtWhatCharIdx: 0
-    animationName: []
+    animationName:
+    - CharSlotLeft_SlideOutToLeft
+    - CharSlotRight_SlideOutToRight
+    - 
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 5d2bcab730a63bc44b614acfd122ca8c, type: 3}
+    textSound: {fileID: 8300000, guid: c9b82b71278707443a2e902ec6ceb21d, type: 3}

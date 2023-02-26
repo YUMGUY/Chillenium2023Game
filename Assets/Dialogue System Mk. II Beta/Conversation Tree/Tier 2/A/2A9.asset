@@ -19,7 +19,7 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 21300000, guid: 0840365aabe0b4b44a92e15afa7c11c0, type: 3}
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: 1c661c21beed46448894483453c1deae, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: 6b5f7906d58a0d84f87535b9dbeadbad, type: 2}

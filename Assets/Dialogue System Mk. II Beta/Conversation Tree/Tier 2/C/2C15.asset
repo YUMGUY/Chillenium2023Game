@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginC 2
+  m_Name: 2C15
   m_EditorClassIdentifier: 
   convo:
-    convoText: Ooooh, let me tell you about Milan! Beautiful skies. Beautiful women.
-      Couples go there all the time, me especially
+    convoText: I like to think that's where I get my dashing good looks. What were
+      we talking about again?
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 5814a40c532bc714c905722502cf6cad, type: 2}
+    - {fileID: 11400000, guid: 76b088725375ac94b98e44fcb78dbf62, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -30,18 +30,18 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
     intensity_: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    ShouldPlayFlash: 1
+    FlashAtWhatCharIdx: 57
+    ShouldPlaySound: 1
+    SoundAtWhatCharIdx: 57
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
@@ -53,5 +53,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}

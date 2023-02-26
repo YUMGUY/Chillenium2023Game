@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2A27
+  m_Name: 2C18
   m_EditorClassIdentifier: 
   convo:
-    convoText: And don't get me started on supermarket prices!
-    currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 21300000, guid: 0840365aabe0b4b44a92e15afa7c11c0, type: 3}
-    character: {fileID: 11400000, guid: 1c661c21beed46448894483453c1deae, type: 2}
+    convoText: You didn't hear it from me, but she's even saving up in a secret bank
+      account!
+    currentCharacterEmotions: []
+    character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 12fee5e96a836234695b6c42dc8b21cd, type: 2}
+    - {fileID: 11400000, guid: 76b088725375ac94b98e44fcb78dbf62, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -31,10 +29,10 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
+    nameOfFlag: wifeBankAccount
     LeftCharOn: 0
     RightCharOn: 0
-    CenterCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -56,4 +54,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 5d2bcab730a63bc44b614acfd122ca8c, type: 3}
+    textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}

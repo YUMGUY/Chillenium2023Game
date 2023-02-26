@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginC 3
+  m_Name: 2C4
   m_EditorClassIdentifier: 
   convo:
-    convoText: "It\u2019s such a shame that she can\u2019t come."
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    convoText: It's that Oo-something guy from work, isn't it?
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 34992ca94e378a2499c968d3751c68f7, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 8e2039d37da23f14b8bd3fec6c12c527, type: 2}
+    - {fileID: 11400000, guid: 8225f14b890de4f4b9e25f5258611485, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -32,15 +35,15 @@ MonoBehaviour:
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayShake: 0
+    ShouldPlayShake: 1
     ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
-    ShouldPlayFlash: 0
+    durationShake_: 0.3
+    intensity_: 0.4
+    ShouldPlayFlash: 1
     FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
+    ShouldPlaySound: 1
     SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
@@ -52,5 +55,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

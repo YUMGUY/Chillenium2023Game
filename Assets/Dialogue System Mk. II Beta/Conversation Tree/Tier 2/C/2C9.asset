@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2A27
+  m_Name: 2C9
   m_EditorClassIdentifier: 
   convo:
-    convoText: And don't get me started on supermarket prices!
+    convoText: Ugh, do we have to?
     currentCharacterEmotions:
+    - {fileID: 21300000, guid: 34992ca94e378a2499c968d3751c68f7, type: 3}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 21300000, guid: 0840365aabe0b4b44a92e15afa7c11c0, type: 3}
-    character: {fileID: 11400000, guid: 1c661c21beed46448894483453c1deae, type: 2}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 12fee5e96a836234695b6c42dc8b21cd, type: 2}
+    - {fileID: 11400000, guid: fb80b0b598c264b4a858ca51bf0bef8b, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -32,8 +32,8 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
-    RightCharOn: 0
+    LeftCharOn: 1
+    RightCharOn: 1
     CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
@@ -56,4 +56,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 5d2bcab730a63bc44b614acfd122ca8c, type: 3}
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}
