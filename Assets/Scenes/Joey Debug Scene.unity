@@ -5572,7 +5572,9 @@ MonoBehaviour:
   notebookRef: {fileID: 907555414}
   conversationManager: {fileID: 1439990348}
   flagsList:
+  - default
   - testflag
+  - motherStoodUpForHim
 --- !u!4 &2092236291
 Transform:
   m_ObjectHideFlags: 0
@@ -5635,6 +5637,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3085684588903077588, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ac4fad664f07ef44c8ca39cb3e68ecdc, type: 3}
     - target: {fileID: 3383439044134197683, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -5651,6 +5657,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
+    - target: {fileID: 7259059894217923381, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259059894217923381, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1152
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259059894217923381, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259059894217923381, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7321533508020400428, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

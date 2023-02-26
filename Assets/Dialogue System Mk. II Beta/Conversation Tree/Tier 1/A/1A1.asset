@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 1A1
   m_EditorClassIdentifier: 
   convo:
-    convoText: Tier 1 A 1 - You also just raised testflag. Check your notebook!
+    convoText: Are you serious? It's natural speech! Can I not even have the decency
+      of a conversation?
     currentCharacterEmotions:
     - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: aeef71899209a8544b54efb468002d0f, type: 3}
     - {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
@@ -31,7 +32,7 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: testflag
+    nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
@@ -44,12 +45,12 @@ MonoBehaviour:
     ShouldPlaySound: 0
     SoundAtWhatCharIdx: 0
     soundToPlay: {fileID: 0}
-    ShouldPlayAnimation: 1
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
+    ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
-    animationName:
-    - 
-    - CharSlotRight_SlideInFromRight
-    - 
+    animationName: []
     textColor_: {r: 0, g: 0, b: 0, a: 1}
     inputFontSize: 0
     isBold: 0

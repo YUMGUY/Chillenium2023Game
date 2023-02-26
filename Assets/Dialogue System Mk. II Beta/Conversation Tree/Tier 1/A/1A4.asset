@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 1A4
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 1 Bromacia discogolflove
-    currentCharacterEmotion: {fileID: 0}
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    convoText: Ha, you don't know the half of it, Doc.
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 2204d5d1fe000ec41acff8732ddab40b, type: 3}
+    - {fileID: 21300000, guid: 3c337a3b020a12840a5bd5a22df01f6f, type: 3}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
@@ -26,8 +29,8 @@ MonoBehaviour:
     holdButtonState: 0
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
-    HusbandHeartIncreaseInterval: 1
-    WifeHeartIncreaseInterval: 1
+    HusbandHeartIncreaseInterval: 0.05
+    WifeHeartIncreaseInterval: -0.05
     nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
@@ -36,11 +39,14 @@ MonoBehaviour:
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
     intensity_: 0
-    ShouldPlayFlash: 0
+    ShouldPlayFlash: 1
     FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
+    ShouldPlaySound: 1
     SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
     ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
     animationName: []
@@ -50,4 +56,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

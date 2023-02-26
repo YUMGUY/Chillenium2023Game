@@ -13,25 +13,47 @@ MonoBehaviour:
   m_Name: 1OriginB
   m_EditorClassIdentifier: 
   convo:
-    convoText: This starts Tier 1 Origin B
-    currentCharacterEmotion: {fileID: 0}
-    character: {fileID: 0}
-    possibleNextTexts: []
+    convoText: Oh! I know! How about we discuss some basic hygiene?
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 9f29e5298c25ed147951b7f0d1b39a60, type: 3}
+    - {fileID: 21300000, guid: c08eb7b7bfe5e504694aecd23bc0bc14, type: 3}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    typingSpeed: 0.03
+    possibleNextTexts:
+    - {fileID: 11400000, guid: 5e8bb9c67eb522d459168b90f796686d, type: 2}
+    NextTaskConditions: []
+    autoAdvance: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
-    ShouldPlayFlash: 0
+    durationShake_: 0
+    intensity_: 0
+    ShouldPlayFlash: 1
     FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
+    ShouldPlaySound: 1
     SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
     ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
-    animToPlay: {fileID: 0}
-    whichObjToAnim: {fileID: 0}
+    animationName: []
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}

@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: 1A7
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 7, You chose option 2
-    currentCharacterEmotion: {fileID: 0}
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    convoText: Here we go again, I'm *always* the bad guy!
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 7ca10f5e1632a304095b5aa7e6f64bec, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 9e4a8de5adbca3144891dd3b1716c4b5, type: 2}
+    - {fileID: 11400000, guid: bdb460c6cb9b29b4ab71d096b73da9fa, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -32,16 +35,25 @@ MonoBehaviour:
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
+    ShouldPlayShake: 1
+    ShakeAtWhatCharIdx: 22
+    durationShake_: 0.2
+    intensity_: 0.1
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     ShouldPlaySound: 0
     SoundAtWhatCharIdx: 0
     soundToPlay: {fileID: 0}
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
     ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
-    animToPlay: {fileID: 0}
-    whichObjToAnim: {fileID: 0}
+    animationName: []
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

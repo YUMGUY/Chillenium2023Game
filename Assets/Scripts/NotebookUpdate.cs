@@ -30,9 +30,15 @@ public class NotebookUpdate : MonoBehaviour
         bool shouldAddToNotebook = true;
 
         switch (flagName) {
+            case ("default"):
+                shouldAddToNotebook = false;
+                break;
+
             case ("testflag"):
                 notebookDesc = "This is a test flag";
                 break;
+
+            
 
 
             default:
