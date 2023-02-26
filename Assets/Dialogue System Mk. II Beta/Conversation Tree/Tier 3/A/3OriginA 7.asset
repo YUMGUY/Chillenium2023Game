@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 3OriginA
+  m_Name: 3OriginA 7
   m_EditorClassIdentifier: 
   convo:
-    convoText: So why did you call us back so early? Our appointment is next week.
+    convoText: Hahahaha, I wish it was.
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: c6a09e3d953ae904cbf846646e450b5c, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 3OriginA
+  m_Name: 3OriginA 9
   m_EditorClassIdentifier: 
   convo:
-    convoText: So why did you call us back so early? Our appointment is next week.
+    convoText: "Hmm I have an inkling of what you\u2019re about to say."
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
     possibleNextTexts: []
     NextTaskConditions: []

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 3OriginA
+  m_Name: BestEnding
   m_EditorClassIdentifier: 
   convo:
-    convoText: So why did you call us back so early? Our appointment is next week.
+    convoText: " The room was showered with bright sunlight that reflected off of
+      their wide smiles. You\u2019re confident that their marriage was saved. You
+      later hear about the husband and wife having a baseball team for children."
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
@@ -29,8 +31,8 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     LeftCharOn: 0
-    RightCharOn: 1
-    CenterCharOn: 1
+    RightCharOn: 0
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
