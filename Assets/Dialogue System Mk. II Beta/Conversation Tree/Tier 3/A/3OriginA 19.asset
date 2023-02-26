@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3OriginA 19
   m_EditorClassIdentifier: 
   convo:
-    convoText: So why did you call us back so early? Our appointment is next week.
+    convoText: "I also give up. I\u2019m outta here."
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
@@ -28,9 +28,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0

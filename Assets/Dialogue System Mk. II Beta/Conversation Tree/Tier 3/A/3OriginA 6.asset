@@ -17,20 +17,23 @@ MonoBehaviour:
     currentCharacterEmotions: []
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: a370ea65286b3c9438340e20ecad6d22, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
+    ShouldLeadToChoice: 1
+    buttonText:
+    - 
+    - 
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0

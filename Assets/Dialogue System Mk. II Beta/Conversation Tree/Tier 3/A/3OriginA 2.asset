@@ -17,7 +17,8 @@ MonoBehaviour:
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: 2ceda5bc8712a19408313ff41ba41d08, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -28,9 +29,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0

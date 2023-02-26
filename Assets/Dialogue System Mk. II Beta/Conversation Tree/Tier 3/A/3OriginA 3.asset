@@ -23,8 +23,8 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 11400000, guid: 5a12a057dd98c604e9e37d29ec559f91, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 0e8ad486dc37173468ad7c72f41f9872, type: 2}
+    - {fileID: 11400000, guid: c6a09e3d953ae904cbf846646e450b5c, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 1
@@ -38,9 +38,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0

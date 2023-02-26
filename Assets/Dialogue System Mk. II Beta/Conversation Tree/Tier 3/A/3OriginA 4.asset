@@ -23,15 +23,15 @@ MonoBehaviour:
     autoAdvance: 0
     ShouldLeadToChoice: 0
     buttonText: []
-    holdButtonState: 1
+    holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0

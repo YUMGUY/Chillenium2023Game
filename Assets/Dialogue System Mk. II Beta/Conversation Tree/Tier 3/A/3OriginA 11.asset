@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: 3OriginA 11
   m_EditorClassIdentifier: 
   convo:
-    convoText: So why did you call us back so early? Our appointment is next week.
+    convoText: WHAT?!
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: c637a44263ddef44f88e192d94d4ad64, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -28,9 +29,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0

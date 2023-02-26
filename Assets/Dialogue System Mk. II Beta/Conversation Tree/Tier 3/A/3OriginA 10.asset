@@ -17,20 +17,31 @@ MonoBehaviour:
     currentCharacterEmotions: []
     character: {fileID: 0}
     typingSpeed: 0.03
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 2a5b1cc1a9cf51644bda009758911769, type: 2}
+    - {fileID: 11400000, guid: 2a5b1cc1a9cf51644bda009758911769, type: 2}
+    - {fileID: 11400000, guid: c865d6bc30c101446b013bed73ad7e18, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
+    ShouldLeadToChoice: 1
+    buttonText:
+    - Husband, I heard from a certain male model that your wife is saving money for
+      Italy for you guys.
+    - "Wife, I heard from your husband\u2019s best bro, Broseph, that your husband
+      is saving money for a trip to Italy."
+    - You guys are screwed.
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 0
+    LeftCharOn: 1
     RightCharOn: 1
-    CenterCharOn: 1
+    CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
