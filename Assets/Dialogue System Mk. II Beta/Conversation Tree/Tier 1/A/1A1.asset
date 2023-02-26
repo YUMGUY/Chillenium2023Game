@@ -41,7 +41,7 @@ MonoBehaviour:
     ShouldPlaySound: 1
     SoundAtWhatCharIdx: 3
     soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
-    ShouldPlayAnimation: 1
+    ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
     animationName:
     - 
