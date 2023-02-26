@@ -44,8 +44,8 @@ public class newConvoManager : MonoBehaviour
         originArr.Add(originArrForTierThree);
 
         currTier = 0;
-        //writeTextRef.startConvo(prologueOrigin);
-        writeTextRef.startConvo(originArr[currTier + 2][0]);
+        writeTextRef.startConvo(prologueOrigin);
+       // writeTextRef.startConvo(originArr[currTier + 2][0]);
         
         //Comment above line and uncomment below to start at specific tier
         //writeTextRef.startConvo(shuffleConvos(currTier));

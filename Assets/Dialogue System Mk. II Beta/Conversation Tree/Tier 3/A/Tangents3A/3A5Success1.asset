@@ -15,7 +15,7 @@ MonoBehaviour:
   convo:
     convoText: Hold on let me cook.
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: a370ea65286b3c9438340e20ecad6d22, type: 2}
@@ -56,4 +56,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    textSound: {fileID: 8300000, guid: c9b82b71278707443a2e902ec6ceb21d, type: 3}

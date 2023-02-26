@@ -15,7 +15,7 @@ MonoBehaviour:
   convo:
     convoText: "You\u2019re joking right?"
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: a370ea65286b3c9438340e20ecad6d22, type: 2}
@@ -53,4 +53,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}

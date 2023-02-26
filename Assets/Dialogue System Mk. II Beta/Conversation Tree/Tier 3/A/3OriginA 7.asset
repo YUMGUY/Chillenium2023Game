@@ -15,7 +15,7 @@ MonoBehaviour:
   convo:
     convoText: Hahahaha, I wish it was.
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: c6a09e3d953ae904cbf846646e450b5c, type: 2}
@@ -53,4 +53,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}
