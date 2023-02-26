@@ -13,25 +13,30 @@ MonoBehaviour:
   m_Name: 2OriginB 2
   m_EditorClassIdentifier: 
   convo:
-    convoText: Our old times disc golfing is like the highlight of my memories.
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    convoText: Our old times disc-golfing is, like, the highlight of my memories.
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: a6fe675ca0971e4488790d9848223463, type: 3}
+    character: {fileID: 11400000, guid: 9ead156ad526c824b997efe19c62a6ba, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: e4abc2b149cca6946958ca796a17bc4f, type: 2}
+    - {fileID: 11400000, guid: e4abc2b149cca6946958ca796a17bc4f, type: 2}
+    - {fileID: 11400000, guid: 353593d2f4b9cf841acc17cc26edad75, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
     buttonText: []
-    holdButtonState: 0
+    holdButtonState: 1
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -52,5 +57,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: d201ff72232de2b458badc87d7fcf6dd, type: 3}

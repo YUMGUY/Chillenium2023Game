@@ -26,6 +26,7 @@ public class writeText : MonoBehaviour
     public GameObject centerCharSlot;
 
     public Button QuestioningButton;
+    public AudioClip questionSFX;
 
     [Header("Reactionary Variables")]
     public ScreenShake shaker;
@@ -161,6 +162,10 @@ public class writeText : MonoBehaviour
 
     public void holdUpButton()
     {
+
+        genSFXPlayer.clip = questionSFX;
+        genSFXPlayer.Play();
+
         if (convoStarted == true)
         {
             if (state == State.COMPLETED)

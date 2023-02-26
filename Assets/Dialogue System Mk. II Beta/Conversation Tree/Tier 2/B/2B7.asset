@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
+  m_Name: 2B7
+  m_EditorClassIdentifier: 
+  convo:
+    convoText: Sometimes the conversation will be steered to require a third-party's
+      input on the matter. Enjoy these unique encounters and try to keep them on
+      topic!
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 7defcc0c76bd9c447ac144ac88140939, type: 3}
+    character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
+    typingSpeed: 0.03
+    possibleNextTexts:
+    - {fileID: 11400000, guid: cb17fe77305ce9746bf559e66d9b7200, type: 2}
+    NextTaskConditions: []
+    autoAdvance: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    holdButtonState: 0
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
+    LeftCharOn: 1
+    RightCharOn: 1
+    CenterCharOn: 0
+    ShouldPlayShake: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    intensity_: 0
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    ShouldPlaySound: 0
+    SoundAtWhatCharIdx: 0
+    soundToPlay: {fileID: 0}
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
+    ShouldPlayAnimation: 1
+    AnimationAtWhatCharIdx: 0
+    animationName:
+    - CharSlotLeft_SlideOutToLeft
+    - CharSlotRight_SlideOutToRight
+    - 
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: c9b82b71278707443a2e902ec6ceb21d, type: 3}

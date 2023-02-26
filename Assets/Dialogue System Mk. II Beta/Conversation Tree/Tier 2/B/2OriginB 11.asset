@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   convo:
     convoText: "But yeah, that\u2019s all I got. Nice meeting you bro!"
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: a6fe675ca0971e4488790d9848223463, type: 3}
+    character: {fileID: 11400000, guid: 9ead156ad526c824b997efe19c62a6ba, type: 2}
     typingSpeed: 0.03
     possibleNextTexts: []
     NextTaskConditions: []
@@ -28,9 +31,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -40,7 +43,7 @@ MonoBehaviour:
     ShouldPlaySound: 0
     SoundAtWhatCharIdx: 0
     soundToPlay: {fileID: 0}
-    ShouldUpdateBGM: 0
+    ShouldUpdateBGM: 1
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
     ShouldPlayAnimation: 0
@@ -51,5 +54,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: d201ff72232de2b458badc87d7fcf6dd, type: 3}

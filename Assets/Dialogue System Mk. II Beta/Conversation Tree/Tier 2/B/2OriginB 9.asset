@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 2OriginB 9
   m_EditorClassIdentifier: 
   convo:
-    convoText: "I remember when he told me after some hardcore disc golf \rthat he\u2019s
-      been saving up for some trip.\r\n"
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    convoText: He mentioned visiting this nice disc-golf place in Italy..
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: c7eba8a69666d65459454a45d06d5710, type: 3}
+    character: {fileID: 11400000, guid: 9ead156ad526c824b997efe19c62a6ba, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 02063e0c11351b64d9da168d7c61be3b, type: 2}
+    - {fileID: 11400000, guid: 1cdcbf588b945cc47b4b4e965d59d467, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -29,10 +31,10 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    nameOfFlag: husbandPlanningItaly
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -53,5 +55,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: d201ff72232de2b458badc87d7fcf6dd, type: 3}

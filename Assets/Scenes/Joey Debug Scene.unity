@@ -3890,7 +3890,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 73f188d99e7942c4e8661a7275f553e7, type: 2}
   originArrForTierTwo:
   - {fileID: 11400000, guid: 71b1d535645fba044985d49c1a995a77, type: 2}
-  - {fileID: 11400000, guid: cb17fe77305ce9746bf559e66d9b7200, type: 2}
+  - {fileID: 11400000, guid: d5552beb065352246a5f70b5268f2947, type: 2}
   - {fileID: 11400000, guid: b31063bf3ca707041b9765fd7a62b06f, type: 2}
   originArrForTierThree:
   - {fileID: 11400000, guid: bf578fa321899ef478883cdc25da7848, type: 2}
@@ -5575,6 +5575,7 @@ MonoBehaviour:
   - testflag
   - motherStoodUpForHim
   - motherIsOld
+  - husbandPlanningItaly
 --- !u!4 &2092236291
 Transform:
   m_ObjectHideFlags: 0
@@ -5640,7 +5641,7 @@ PrefabInstance:
     - target: {fileID: 3085684588903077588, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ac4fad664f07ef44c8ca39cb3e68ecdc, type: 3}
+      objectReference: {fileID: 21300000, guid: 7defcc0c76bd9c447ac144ac88140939, type: 3}
     - target: {fileID: 3383439044134197683, guid: f26dedd6e10a4774db30387e7b556c06, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -6320,6 +6321,7 @@ MonoBehaviour:
   rightCharSlot: {fileID: 473362016}
   centerCharSlot: {fileID: 883407521}
   QuestioningButton: {fileID: 1558358597253231753}
+  questionSFX: {fileID: 8300000, guid: a318ab7063447c34e93bdf06bb63ae65, type: 3}
   shaker: {fileID: 1388008200}
   flasher: {fileID: 1287428741}
   isAnimatingText: 0
