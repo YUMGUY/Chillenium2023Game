@@ -3894,9 +3894,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b31063bf3ca707041b9765fd7a62b06f, type: 2}
   originArrForTierThree:
   - {fileID: 11400000, guid: bf578fa321899ef478883cdc25da7848, type: 2}
-  - {fileID: 11400000, guid: 8be2f745ae67cef42b6ffb44e3927d1e, type: 2}
   prologueOrigin: {fileID: 11400000, guid: 8f43f2ac9fd6a6247acb893e64dbc841, type: 2}
-  finaleOrigin: {fileID: 0}
+  finaleOrigin: {fileID: 11400000, guid: 35728a9c457a8fc4d967d4a30f50d6f4, type: 2}
   tier3Origin: {fileID: 11400000, guid: bf578fa321899ef478883cdc25da7848, type: 2}
 --- !u!4 &1439990349
 Transform:

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
+  m_Name: 3OriginA 3
+  m_EditorClassIdentifier: 
+  convo:
+    convoText: So, after all your consideration..who do you think is in the right
+      here.
+    currentCharacterEmotions: []
+    character: {fileID: 0}
+    typingSpeed: 0.03
+    possibleNextTexts:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 5a12a057dd98c604e9e37d29ec559f91, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    NextTaskConditions: []
+    autoAdvance: 0
+    ShouldLeadToChoice: 1
+    buttonText:
+    - I think that both of you guys are in the wrong.
+    - "Well it\u2019s up to you guys."
+    - "I think I\u2019m going to quit."
+    holdButtonState: 0
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
+    LeftCharOn: 0
+    RightCharOn: 1
+    CenterCharOn: 1
+    ShouldPlayShake: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    intensity_: 0
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    ShouldPlaySound: 0
+    SoundAtWhatCharIdx: 0
+    soundToPlay: {fileID: 0}
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 0
+    textSound: {fileID: 0}
