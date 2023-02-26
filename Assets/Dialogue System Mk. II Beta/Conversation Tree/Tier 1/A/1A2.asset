@@ -16,7 +16,7 @@ MonoBehaviour:
     convoText: This is Tier 1 A 1 Bromacia discogolflove
     currentCharacterEmotions:
     - {fileID: 0}
-    - {fileID: 21300000, guid: 9f29e5298c25ed147951b7f0d1b39a60, type: 3}
+    - {fileID: 21300000, guid: c25027e931eae524aa7e8ee6f3a3e0a4, type: 3}
     - {fileID: 0}
     character: {fileID: 0}
     typingSpeed: 0.03
