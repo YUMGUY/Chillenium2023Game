@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a182a1d87654d5148b0de3c5ce5df40b, type: 3}
   m_Name: Oolander
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Oolander
   nameColor: {r: 0.1573938, g: 0.6603774, b: 0.14640442, a: 1}
   characterLabel: 1

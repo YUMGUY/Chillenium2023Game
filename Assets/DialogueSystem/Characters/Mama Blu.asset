@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a182a1d87654d5148b0de3c5ce5df40b, type: 3}
   m_Name: Mama Blu
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Mama Blu
   nameColor: {r: 0.3700605, g: 0.71574026, b: 0.7924528, a: 1}
   characterLabel: 1
