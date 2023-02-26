@@ -41,7 +41,15 @@ public class writeText : MonoBehaviour
     [Header("Audio Sound Effects")]
     public AudioSource textSFXPlayer;
     public AudioSource genSFXPlayer;
-   
+
+    [Header("Notepad properties")]
+    public bool notePadOpened;
+    public TextMeshProUGUI page1;
+    public TextMeshProUGUI page2;
+
+    [Header("Character Animator Properties")]
+    public Animator[] animatorChars;
+
 
 
     private enum State
@@ -68,7 +76,7 @@ public class writeText : MonoBehaviour
                     convoManager.ConvoCompleteCalc(currentDialogue, false, -1);
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.Z) && convoStarted)
+            else if (Input.GetKeyDown(KeyCode.Z) && convoStarted && !notePadOpened)
             {
 
                 if (state == State.COMPLETED) // if the line is completed
@@ -303,6 +311,20 @@ public class writeText : MonoBehaviour
                     // Make the object animate!   
                     Debug.Log("Thing Animated");
                     //currentDialogue.convo.animToPlay.Play();
+                    //currentDialogue.convo.whichObjToAnim.SetTrigger("hop");
+                    for(int i = 0; i < animatorChars.Length; ++i)
+                    {
+                        AnimationClip[] clips = animatorChars[i].runtimeAnimatorController.animationClips;
+                        foreach (AnimationClip clip in clips)
+                        {
+                            //print(clip.name);
+                            if (clip.name == currentDialogue.convo.animationName[i])
+                            {
+                                print("played correct animation");
+                                animatorChars[i].Play(clip.name);
+                            }
+                        }
+                    }  
                 }
             }
 
@@ -313,7 +335,7 @@ public class writeText : MonoBehaviour
                 
                 if(currentDialogue.convo.ShouldPlayTextSound && text[charIndex] != ' ') 
                 { 
-                    print("play text sound");
+                   // print("play text sound");
                     textSFXPlayer.clip = currentDialogue.convo.textSound;
                     textSFXPlayer.Play();
                 }
@@ -396,5 +418,18 @@ public class writeText : MonoBehaviour
 
             convoStarted = false;
         }
+    }
+
+    public void OpenNotePad()
+    {
+        // count flags first to determine page 1 or page 2
+        int number = gameManagerRef.flagManager.Count;
+        // do later
+        gameManagerRef.flagManager.Keys.ToString();
+        notePadOpened = true;
+    }
+    public void CloseNotePad()
+    {
+        notePadOpened = false;
     }
 }

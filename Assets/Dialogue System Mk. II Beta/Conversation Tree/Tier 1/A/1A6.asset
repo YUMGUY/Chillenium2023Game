@@ -51,3 +51,10 @@ MonoBehaviour:
     AnimationAtWhatCharIdx: 0
     animToPlay: {fileID: 0}
     whichObjToAnim: {fileID: 0}
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: a02bf0454d8292d42ac8f7f5da9b5bc9, type: 3}

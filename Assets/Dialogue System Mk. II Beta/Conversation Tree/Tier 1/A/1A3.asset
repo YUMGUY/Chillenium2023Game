@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1A3
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 3
+    convoText: This is Tier 1 A 1 Bromacia discogolflove
     currentCharacterEmotion: {fileID: 0}
     character: {fileID: 0}
     typingSpeed: 0.03
@@ -43,12 +43,11 @@ MonoBehaviour:
     soundToPlay: {fileID: 0}
     ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
-    animToPlay: {fileID: 0}
-    whichObjToAnim: {fileID: 0}
+    animationName: []
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 2d07a29e4bf8bb04ba1d3c309270ab8c, type: 3}
+    textSound: {fileID: 8300000, guid: 5d2bcab730a63bc44b614acfd122ca8c, type: 3}

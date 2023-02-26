@@ -48,6 +48,7 @@ public class TextBox : ScriptableObject
         public bool RightCharOn;
         public bool CenterCharOn;
 
+
         [Header("Screen Shake")]
         public bool ShouldPlayShake;
         public int ShakeAtWhatCharIdx;
@@ -67,8 +68,8 @@ public class TextBox : ScriptableObject
         [Header("Dialogue Anim")]
         public bool ShouldPlayAnimation;
         public int AnimationAtWhatCharIdx;
-        public Animation animToPlay;
-        public Animator whichObjToAnim;
+        public string[] animationName;
+        //public GameObject[] charactersToAnim;
 
         [Header("Custom Text Effects")]
         public Color textColor_;

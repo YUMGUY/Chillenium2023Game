@@ -32,7 +32,7 @@ public class EmotionalTextMaker : MonoBehaviour
 
     public void MakeWavyText()
     {
-        print("animating text");
+       // print("animating text");
         textComponent.ForceMeshUpdate();
         var textInfo = textComponent.textInfo;
         for (int i = 0; i < textInfo.characterCount; ++i)
