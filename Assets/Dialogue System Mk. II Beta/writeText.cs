@@ -228,7 +228,7 @@ public class writeText : MonoBehaviour
 
         try
         {
-            namePanel.text = currentDialogue.convo.character.name;
+            namePanel.text = currentDialogue.convo.character.speakerName;
         }
         catch
         {

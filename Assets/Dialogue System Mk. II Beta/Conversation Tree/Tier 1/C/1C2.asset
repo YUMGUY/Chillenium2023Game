@@ -15,8 +15,8 @@ MonoBehaviour:
   convo:
     convoText: I bust my ass to earn money for us babe!
     currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 0f9f7f315f440f247b3edfecb776913d, type: 3}
+    - {fileID: 21300000, guid: f48e0b70d6f23584ea392c9ccbe15ffd, type: 3}
     - {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
@@ -35,10 +35,10 @@ MonoBehaviour:
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayShake: 0
+    ShouldPlayShake: 1
     ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
+    durationShake_: 0.3
+    intensity_: 0.1
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     ShouldPlaySound: 0

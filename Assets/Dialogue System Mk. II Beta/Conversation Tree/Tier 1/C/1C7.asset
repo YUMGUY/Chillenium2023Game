@@ -16,8 +16,8 @@ MonoBehaviour:
     convoText: Milan is so romantic dear, and I can only get my fill of Italian chic
       through my wonderful collection of handbags.
     currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 6454100d1b7ea064a8238a36d73d0e7e, type: 3}
+    - {fileID: 21300000, guid: 263099b9a5d0c28469012a74706c90ca, type: 3}
     - {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03

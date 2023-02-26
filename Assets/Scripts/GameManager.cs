@@ -88,6 +88,10 @@ public class GameManager : MonoBehaviour
             ending = 0;
         }
 
+
+        //
+        
+
         conversationManager.startEndSequence(ending);
 
         Debug.Log("You're ending is: " + ending);
@@ -95,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     public void winCondition() {
         Debug.Log("You Win!");
+       // conversationManager.startEndSequence(0);
 
         //conversationManager.startEndSequence(-1);
 

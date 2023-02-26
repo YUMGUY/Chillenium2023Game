@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 1C14
   m_EditorClassIdentifier: 
   convo:
-    convoText: "\u201CI don\u2019t know how much I matter to you!"
+    convoText: "I don\u2019t know how much I matter to you!"
     currentCharacterEmotions:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: e5e0937eb52904e41b99de16fea85c63, type: 3}
     - {fileID: 0}
     - {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
@@ -34,15 +34,15 @@ MonoBehaviour:
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayShake: 0
+    ShouldPlayShake: 1
     ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
+    durationShake_: 0.5
+    intensity_: 0.15
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
+    ShouldPlaySound: 1
     SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}

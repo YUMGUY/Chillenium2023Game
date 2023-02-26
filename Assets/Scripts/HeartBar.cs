@@ -48,6 +48,7 @@ public class HeartBar : MonoBehaviour
 
         if (HusBarPercent == 1.0f && WifeBarPercent == 1.0f) {
             gameManagerRef.winCondition();
+
         }
     }
 
