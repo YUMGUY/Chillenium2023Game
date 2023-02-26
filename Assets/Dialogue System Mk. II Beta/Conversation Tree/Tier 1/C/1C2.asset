@@ -10,25 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 1A6
+  m_Name: 1C2
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 6 (You let him cook)
-    currentCharacterEmotions: []
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    convoText: I bust my ass to earn money for us babe!
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: bdb460c6cb9b29b4ab71d096b73da9fa, type: 2}
-    - {fileID: 11400000, guid: 4e21c2a9fc10e96438b56b673d767e79, type: 2}
+    - {fileID: 11400000, guid: 634b695f52127e043a357576d8083bc5, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 1
-    buttonText:
-    - You could say...
-    - Or this...?
+    ShouldLeadToChoice: 0
+    buttonText: []
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
@@ -59,4 +56,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: a02bf0454d8292d42ac8f7f5da9b5bc9, type: 3}
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

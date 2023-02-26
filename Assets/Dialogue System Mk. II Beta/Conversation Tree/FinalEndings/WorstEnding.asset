@@ -10,33 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 1A6
+  m_Name: WorstEnding
   m_EditorClassIdentifier: 
   convo:
-    convoText: This is Tier 1 A 6 (You let him cook)
+    convoText: You briefly felt a moment of peace. That peace was soon shattered
+      by the couple after leaving the room as you hear the bickering explode but
+      slowly fade away. You later hear that they got divorced.
     currentCharacterEmotions: []
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    character: {fileID: 0}
     typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: bdb460c6cb9b29b4ab71d096b73da9fa, type: 2}
-    - {fileID: 11400000, guid: 4e21c2a9fc10e96438b56b673d767e79, type: 2}
+    possibleNextTexts: []
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 1
-    buttonText:
-    - You could say...
-    - Or this...?
+    ShouldLeadToChoice: 0
+    buttonText: []
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
+    LeftCharOn: 0
+    RightCharOn: 0
     CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
@@ -58,5 +53,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: a02bf0454d8292d42ac8f7f5da9b5bc9, type: 3}
+    ShouldPlayTextSound: 0
+    textSound: {fileID: 0}
