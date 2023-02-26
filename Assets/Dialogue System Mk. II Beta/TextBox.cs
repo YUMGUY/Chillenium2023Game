@@ -13,7 +13,7 @@ public class TextBox : ScriptableObject
     {
         [TextArea(2, 10)]
         public string convoText;
-        public Sprite currentCharacterEmotion;
+        public Sprite[] currentCharacterEmotions;
         public SpeakerInfo character;
 
         public float typingSpeed;

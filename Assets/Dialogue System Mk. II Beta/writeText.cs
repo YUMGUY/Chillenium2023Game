@@ -50,6 +50,9 @@ public class writeText : MonoBehaviour
     [Header("Character Animator Properties")]
     public Animator[] animatorChars;
 
+    [Header("Character Emotion Properties")]
+    public Image[] characterBodies;
+
 
 
     private enum State
@@ -189,6 +192,8 @@ public class writeText : MonoBehaviour
             hasChoices = false;
         }
 
+        
+
         QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
 
 
@@ -235,10 +240,15 @@ public class writeText : MonoBehaviour
 
         try
         {
-            Sprite emotionParam = currentDialogue.convo.currentCharacterEmotion;
-        }
-        catch { 
+            for(int i = 0; i< characterBodies.Length; ++i) 
+            {   
+                if(currentDialogue.convo.currentCharacterEmotions[i] == null) { continue; }
+                characterBodies[i].sprite = currentDialogue.convo.currentCharacterEmotions[i];
+            }
 
+        }
+        catch {
+            print("not enough emotions for all characters");
         }
 
         
