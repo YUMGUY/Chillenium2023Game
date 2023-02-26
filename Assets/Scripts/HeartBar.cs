@@ -27,7 +27,7 @@ public class HeartBar : MonoBehaviour
     [SerializeField]
     [Range(0.0f, 1.0f)]
     public float WifeBarPercent = 0.0f;
-
+    public bool update;
     
 
     // Start is called before the first frame update
@@ -46,7 +46,8 @@ public class HeartBar : MonoBehaviour
         LeftHeart.transform.position = new Vector3(initialLeftPos + HusBarPercent * HusBarDistance, LeftHeart.transform.position.y, LeftHeart.transform.position.z);
         RightHeart.transform.position = new Vector3(initialRightPos - WifeBarPercent * WifeBarDistance, RightHeart.transform.position.y, RightHeart.transform.position.z);
 
-        if (HusBarPercent == 1.0f && WifeBarPercent == 1.0f) {
+        if (HusBarPercent == 1.0f && WifeBarPercent == 1.0f && !update) {
+            update = true;
             gameManagerRef.winCondition();
 
         }

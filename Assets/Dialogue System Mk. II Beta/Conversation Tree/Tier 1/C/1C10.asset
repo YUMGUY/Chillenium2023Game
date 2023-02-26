@@ -26,10 +26,10 @@ MonoBehaviour:
     ShouldLeadToChoice: 0
     buttonText: []
     holdButtonState: 0
-    IncreaseHusbandHeart: 0
+    IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
-    HusbandHeartIncreaseInterval: 1
-    WifeHeartIncreaseInterval: 1
+    HusbandHeartIncreaseInterval: 0.2
+    WifeHeartIncreaseInterval: 0.5
     nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1

@@ -463,7 +463,7 @@ public class writeText : MonoBehaviour
 
         else
         {
-            print("Jump to Ending");
+            print("Jump to Final Ending");
             textPanel.text = string.Empty;
             // temporary disappearance of dialogue box and characters
             /*

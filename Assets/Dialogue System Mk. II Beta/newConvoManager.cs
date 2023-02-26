@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class newConvoManager : MonoBehaviour
 {
@@ -44,7 +45,7 @@ public class newConvoManager : MonoBehaviour
 
         currTier = 0;
         //writeTextRef.startConvo(prologueOrigin);
-        writeTextRef.startConvo(originArr[currTier][4]);
+        writeTextRef.startConvo(originArr[currTier + 2][0]);
         
         //Comment above line and uncomment below to start at specific tier
         //writeTextRef.startConvo(shuffleConvos(currTier));
@@ -202,27 +203,30 @@ public class newConvoManager : MonoBehaviour
 
     }
 
-    public void startEndSequence(int endingIndex) {
-        currTier = 4;
+    public void StartBadSequence() {
 
-        if (endingIndex < 0)
-        {
-            //Got best ending, hearts met
-            writeTextRef.startConvo(finaleOrigin);
-        }
-        else if (endingIndex == 1)
-        {
-            //Got husband ending
-            writeTextRef.startConvo(finaleOrigin);
-        }
-        else if (endingIndex == 2)
-        {
-            //Got wife ending
-            writeTextRef.startConvo(finaleOrigin);
-        }
-        else {
-            //Got generic divorce ending
-            writeTextRef.startConvo(finaleOrigin);
-        }
+        SceneManager.LoadScene("BadEnding");
+        //currTier = 4;
+
+        //if (endingIndex < 0)
+        //{
+        //    //Got best ending, hearts met
+        //    writeTextRef.startConvo(finaleOrigin);
+        //}
+        //else if (endingIndex == 1)
+        //{
+        //    //Got husband ending
+        //    writeTextRef.startConvo(finaleOrigin);
+        //}
+        //else if (endingIndex == 2)
+        //{
+        //    //Got wife ending
+        //    writeTextRef.startConvo(finaleOrigin);
+        //}
+        //else {
+        //    //Got generic divorce ending
+        //    writeTextRef.startConvo(finaleOrigin);
+        //}
+
     }
 }

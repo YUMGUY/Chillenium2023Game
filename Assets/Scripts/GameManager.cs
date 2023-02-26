@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     private float husbandScore;
     private float wifeScore;
+
+    public bool gameWon;
 
     // Start is called before the first frame update
     void Start()
@@ -89,16 +92,28 @@ public class GameManager : MonoBehaviour
         }
 
 
-        //
-        
-
-        conversationManager.startEndSequence(ending);
+     
 
         Debug.Log("You're ending is: " + ending);
+        conversationManager.StartBadSequence();
+
+       
     }
 
     public void winCondition() {
         Debug.Log("You Win!");
+        
+        
+        // load scene good scene
+        if(gameWon == false)
+        {
+            print("load scene");
+            SceneManager.LoadScene("GoodEnding");
+            gameWon = true;
+        }
+        
+        
+
        // conversationManager.startEndSequence(0);
 
         //conversationManager.startEndSequence(-1);
