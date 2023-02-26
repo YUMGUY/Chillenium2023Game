@@ -5574,6 +5574,7 @@ MonoBehaviour:
   - default
   - testflag
   - motherStoodUpForHim
+  - motherIsOld
 --- !u!4 &2092236291
 Transform:
   m_ObjectHideFlags: 0
