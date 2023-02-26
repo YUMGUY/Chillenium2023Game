@@ -21,6 +21,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
     holdButtonState: 0
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
@@ -32,6 +34,8 @@ MonoBehaviour:
     CenterCharOn: 0
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    intensity_: 0
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     ShouldPlaySound: 0
@@ -41,3 +45,10 @@ MonoBehaviour:
     AnimationAtWhatCharIdx: 0
     animToPlay: {fileID: 0}
     whichObjToAnim: {fileID: 0}
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 0
+    textSound: {fileID: 0}

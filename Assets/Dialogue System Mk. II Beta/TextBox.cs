@@ -62,6 +62,7 @@ public class TextBox : ScriptableObject
         public bool ShouldPlaySound;
         public int SoundAtWhatCharIdx;
         public AudioClip soundToPlay;
+        
 
         [Header("Dialogue Anim")]
         public bool ShouldPlayAnimation;
@@ -75,6 +76,11 @@ public class TextBox : ScriptableObject
         public bool isBold;
         public bool isWavy;
         public bool isWiggling;
+
+        [Header("Text Sound Effects")]
+        public bool ShouldPlayTextSound;
+        public AudioClip textSound;
+
         [SerializeField]
         public enum Action
         {

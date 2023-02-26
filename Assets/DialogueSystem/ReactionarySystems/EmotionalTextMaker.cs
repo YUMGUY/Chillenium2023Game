@@ -61,7 +61,7 @@ public class EmotionalTextMaker : MonoBehaviour
 
     public void MakeWiggleText()
     {
-        print("wiggling text");
+       // print("wiggling text");
         textComponent.ForceMeshUpdate();
         var textInfo = textComponent.textInfo;
         for (int i = 0; i < textInfo.characterCount; ++i)

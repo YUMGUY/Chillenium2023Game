@@ -38,6 +38,11 @@ public class writeText : MonoBehaviour
 
     private int numOfButtons;
 
+    [Header("Audio Sound Effects")]
+    public AudioSource textSFXPlayer;
+    public AudioSource genSFXPlayer;
+   
+
 
     private enum State
     {
@@ -289,6 +294,7 @@ public class writeText : MonoBehaviour
                 {
                     // Play a sound!   
                     Debug.Log("Sound played");
+                    genSFXPlayer.PlayOneShot(currentDialogue.convo.soundToPlay);
                 }
             }
             if (currentDialogue.convo.ShouldPlayAnimation) {
@@ -302,6 +308,22 @@ public class writeText : MonoBehaviour
 
 
             // add audio clip of text here
+            try
+            {
+                
+                if(currentDialogue.convo.ShouldPlayTextSound && text[charIndex] != ' ') 
+                { 
+                    print("play text sound");
+                    textSFXPlayer.clip = currentDialogue.convo.textSound;
+                    textSFXPlayer.Play();
+                }
+                    
+            }
+            catch
+            {
+                print("Either missing audio source or no audio clip is provided");
+            }
+
             textPanel.text += text[charIndex];
             yield return new WaitForSeconds(currentDialogue.convo.typingSpeed);
 
