@@ -10,17 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginC 6
+  m_Name: 2C2
   m_EditorClassIdentifier: 
   convo:
-    convoText: Ooh what a shame indeed for her.
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    convoText: 'Just be honest with me hun, are you cheating on me?     '
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 5d24e59cea2d1c94ea954c4113243491, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: c53e09bf3c1779f4982cbc1e834d0c32, type: 2}
+    - {fileID: 11400000, guid: a3b7a6fcbf5593a48ba9e24460605b20, type: 2}
     NextTaskConditions: []
-    autoAdvance: 0
+    autoAdvance: 1
     ShouldLeadToChoice: 0
     buttonText: []
     holdButtonState: 0
@@ -52,5 +55,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

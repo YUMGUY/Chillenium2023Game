@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: 2OriginC
   m_EditorClassIdentifier: 
   convo:
-    convoText: "So, you\u2019re here to talk about sweet Julia?"
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    convoText: Listen, I really didn't wanna bring this up, especially in front of
+      others but...
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 9ac764cf8cdcb3640ba6db968219b34c, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: e613de8fd78c8c1449d0636d92cbb1ef, type: 2}
+    - {fileID: 11400000, guid: 03bd3f9e7f34acc4e85bcd479d964cf9, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -52,5 +56,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

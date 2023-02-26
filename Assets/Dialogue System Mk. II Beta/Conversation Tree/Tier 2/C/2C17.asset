@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginC 12
+  m_Name: 2C17
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Plus I\u2019m like ten times as handsome as him."
+    convoText: She talks to me on the daily about how she yearns to go with her husband.
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
     typingSpeed: 0.03
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: c53e09bf3c1779f4982cbc1e834d0c32, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -28,9 +29,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -51,5 +52,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}

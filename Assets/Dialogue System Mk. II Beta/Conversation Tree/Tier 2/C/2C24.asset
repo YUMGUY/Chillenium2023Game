@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 2OriginC 10
+  m_Name: 2C24
   m_EditorClassIdentifier: 
   convo:
-    convoText: Just as my chiseled face developed, I think her inner romantic blossomed.
+    convoText: One day she'll admit her true feelings for me and leave that husband
+      of hers.
     currentCharacterEmotions: []
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 2723119529f2f5144a8570670efa17cb, type: 2}
+    - {fileID: 11400000, guid: d436e816637026847b7a240d846115fd, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -28,10 +29,10 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    nameOfFlag: heWantsWife
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -52,5 +53,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}
