@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   convo:
     convoText: "He\u2019s talked a lot about working to afford their wedding.."
-    currentCharacterEmotions: []
-    character: {fileID: 0}
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: f21bd1e481d54ca489165233b8c40161, type: 3}
+    character: {fileID: 11400000, guid: 9ead156ad526c824b997efe19c62a6ba, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
     - {fileID: 11400000, guid: d4e77b17703c8e44ba31c42ae8977fef, type: 2}
@@ -29,9 +32,9 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
     ShouldPlayShake: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
@@ -52,5 +55,5 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: d201ff72232de2b458badc87d7fcf6dd, type: 3}
