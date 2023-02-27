@@ -707,6 +707,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4279256124956690150, guid: 7e0af550c363f6341b484b37e46f4a2f, type: 3}
+      propertyPath: PauseMenuItems
+      value: 
+      objectReference: {fileID: 1975740990}
     - target: {fileID: 4279256124956690151, guid: 7e0af550c363f6341b484b37e46f4a2f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -793,3 +797,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0af550c363f6341b484b37e46f4a2f, type: 3}
+--- !u!1 &1975740990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4279256123832602019, guid: 7e0af550c363f6341b484b37e46f4a2f, type: 3}
+  m_PrefabInstance: {fileID: 1975740989}
+  m_PrefabAsset: {fileID: 0}
