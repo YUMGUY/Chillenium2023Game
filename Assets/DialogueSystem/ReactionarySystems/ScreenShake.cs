@@ -9,6 +9,7 @@ public class ScreenShake : MonoBehaviour
     public float magnitudeInput;
     public float durationShake;
     public AnimationCurve strength;
+    public bool isShaking;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class ScreenShake : MonoBehaviour
 
     public IEnumerator Shake(float duration, float magnitude)
     {
+        
         Vector3 originalPos = transform.localPosition;
         float elapsedTime = 0;
         while(elapsedTime < duration)

@@ -19,7 +19,7 @@ MonoBehaviour:
     character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: d436e816637026847b7a240d846115fd, type: 2}
+    - {fileID: 11400000, guid: 3f503ee56a3e6f34db4a014978bd6535, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0

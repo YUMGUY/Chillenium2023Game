@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   convo:
     convoText: Babe, I *do* want to spend time with you. But all I can do at the
-      dinne table is watch you eat food.
+      dinner table is watch you eat food.
     currentCharacterEmotions:
     - {fileID: 21300000, guid: 7342f374c45201d4c81345b5452d8f07, type: 3}
     - {fileID: 0}

@@ -28,9 +28,9 @@ MonoBehaviour:
     buttonText: []
     holdButtonState: 0
     IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
+    IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: -0.2
     nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
