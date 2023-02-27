@@ -51,7 +51,7 @@ MonoBehaviour:
     animationName: []
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
-    isBold: 0
+    isBold: 1
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1

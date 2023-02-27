@@ -17,10 +17,10 @@ public class FlashScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            print("flashed screen");
-            flashAnimator.SetTrigger("Flash");
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    print("flashed screen");
+        //    flashAnimator.SetTrigger("Flash");
+        //}
     }
 }
