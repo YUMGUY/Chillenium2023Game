@@ -5,86 +5,89 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewDialogue", menuName = "Dialogue_Data/New Dialogue Field")]
 public class TextBox : ScriptableObject
 {
-    [Header("scene's convo")]
+    [Header("Conversation Attributes")]
     public Conversation convo;
 
     [System.Serializable]
     public struct Conversation
     {
+
         [TextArea(2, 10)]
         public string convoText;
-        public Sprite[] currentCharacterEmotions;
-        public SpeakerInfo character;
 
+        [Header("-Speaker-")]
+        public SpeakerInfo character;
+        
+
+        [Header("-Text effects-")]
+        public bool autoAdvance;
+        public bool ShouldPlayTextSound;
+        public AudioClip textSound;         // This should be combined with "Character"
         public float typingSpeed;
 
-        [Header("List all possible conversation branches from this text")]
-        public TextBox[] possibleNextTexts;
 
-        [Header("For each above possible convo, list a condition for them to be taken. Index 0 is the default")]
-        public string[] NextTaskConditions;
+        [Header("-Custom text effects-")]
+        public Color textColor_;
+        public int inputFontSize;
+        public bool isBold;
+        public bool isWavy;
+        public bool isWiggling;
 
-        [Header("Does the text move to the next box automatically?")]
-        public bool autoAdvance;
+        [Header("-Sound effect-")]
+        public bool ShouldPlaySound;
+        public AudioClip soundToPlay;
+        public int SoundAtWhatCharIdx;
 
-        [Header("Does this text lead to a choice?")]
+        [Header("-Screen shake-")]
+        public bool ShouldPlayShake;
+        public float intensity_;
+        public int ShakeAtWhatCharIdx;
+        public float durationShake_;
+
+        [Header("-Screen flash-")]
+        public bool ShouldPlayFlash;
+        public int FlashAtWhatCharIdx;
+
+        [Header("-Elaborate button-")]
+        public bool holdButtonState;
+
+        [Header("-Choices-")]
         public bool ShouldLeadToChoice;
         public string[] buttonText;
 
-        [Header("Is the Hold Up Button Enabled?")]
-        public bool holdButtonState;
-
-        [Header("Heart Meter Effects")]
+        [Header("-Heart meter effects-")]
         public bool IncreaseHusbandHeart;
         public bool IncreaseWifeHeart;
         public float HusbandHeartIncreaseInterval;
         public float WifeHeartIncreaseInterval;
 
-        [Header("Raise a flag at this dialogue?")]
+        [Header("-Raise a flag at this dialogue?-")]
         public string nameOfFlag;
 
-        [Header("Enable or Disable Characters")]
+        [Header("-List all possible conversation branches from this text-")]
+        public TextBox[] possibleNextTexts;
+
+        [Header("-For each above possible convo, list a condition for them to be taken. Index 0 is the default-")]
+        public string[] NextTaskConditions;
+
+        [Header("-Character emotions-")]
+        public Sprite[] currentCharacterEmotions;
+
+        [Header("-Enable or Disable Characters-")]
         public bool LeftCharOn;
         public bool RightCharOn;
         public bool CenterCharOn;
 
+        [Header("-Dialogue Anim-")]
+        public bool ShouldPlayAnimation;
+        public int AnimationAtWhatCharIdx;
+        public string[] animationName;
 
-        [Header("Screen Shake")]
-        public bool ShouldPlayShake;
-        public int ShakeAtWhatCharIdx;
-        public float durationShake_;
-        public float intensity_;
-
-        [Header("Screen Flash")]
-        public bool ShouldPlayFlash;
-        public int FlashAtWhatCharIdx;
-
-        [Header("Sound Effect")]
-        public bool ShouldPlaySound;
-        public int SoundAtWhatCharIdx;
-        public AudioClip soundToPlay;
-
-        [Header("BGM Effect")]
+        [Header("-BGM Effect-")]
         public bool ShouldUpdateBGM;
         public int musicAtWhatCharIdx;
         public AudioClip musicToPlay;
 
-        [Header("Dialogue Anim")]
-        public bool ShouldPlayAnimation;
-        public int AnimationAtWhatCharIdx;
-        public string[] animationName;
-        //public GameObject[] charactersToAnim;
-
-        [Header("Custom Text Effects")]
-        public Color textColor_;
-        public float inputFontSize;
-        public bool isBold;
-        public bool isWavy;
-        public bool isWiggling;
-
-        [Header("Text Sound Effects")]
-        public bool ShouldPlayTextSound;
-        public AudioClip textSound;
 
         [SerializeField]
         public enum Action
