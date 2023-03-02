@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Bob
   m_EditorClassIdentifier: 
   speakerName: Husband
-  nameColor: {r: 0.9433962, g: 0.78764683, b: 0.78764683, a: 1}
+  nameColor: {r: 0.634523, g: 0.9150943, b: 0.9150943, a: 1}
   characterLabel: 1
+  textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

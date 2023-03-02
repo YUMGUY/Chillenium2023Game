@@ -866,7 +866,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 219506c1e177b5a4e86f34297e7e805a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2315,7 +2315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3887,6 +3887,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1388008207, guid: 43611061544de9a49a9693ca5d6e13e8, type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 6860520419999442714, guid: 43611061544de9a49a9693ca5d6e13e8, type: 3}
       propertyPath: m_Name
       value: Camera Holder
@@ -3935,9 +3939,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6860520421029424657, guid: 43611061544de9a49a9693ca5d6e13e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7616919657093634993, guid: 43611061544de9a49a9693ca5d6e13e8, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43611061544de9a49a9693ca5d6e13e8, type: 3}
@@ -5107,7 +5115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -5296,7 +5304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -5703,6 +5711,8 @@ MonoBehaviour:
   flagsList:
   - default
   - testflag
+  - thirdPartyTutoiral
+  - notebookTutorial
   - motherStoodUpForHim
   - motherIsOld
   - husbandPlanningItaly
@@ -6219,6 +6229,7 @@ GameObject:
   - component: {fileID: 1558358597253231755}
   - component: {fileID: 1558358597253231752}
   - component: {fileID: 1558358597253231753}
+  - component: {fileID: 1558358597253231756}
   m_Layer: 5
   m_Name: Questioning Button
   m_TagString: Untagged
@@ -6269,7 +6280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -6320,6 +6331,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558358597253231751}
   m_CullTransparentMesh: 1
+--- !u!95 &1558358597253231756
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558358597253231751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9bb89a754692d38469958cf3c2b92d4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1558358597840967322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6453,6 +6484,7 @@ MonoBehaviour:
   centerCharSlot: {fileID: 883407521}
   QuestioningButton: {fileID: 1558358597253231753}
   questionSFX: {fileID: 8300000, guid: a318ab7063447c34e93bdf06bb63ae65, type: 3}
+  interjectAnim: {fileID: 1558358597253231756}
   shaker: {fileID: 1388008200}
   flasher: {fileID: 1287428741}
   isAnimatingText: 0
@@ -6467,6 +6499,7 @@ MonoBehaviour:
   notePadOpened: 0
   page1: {fileID: 0}
   page2: {fileID: 0}
+  notebookOpen: {fileID: 8300000, guid: f7ab3664cd7577c4095af47ddba1daa7, type: 3}
   animatorChars:
   - {fileID: 710422739}
   - {fileID: 473362018}
@@ -6487,7 +6520,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

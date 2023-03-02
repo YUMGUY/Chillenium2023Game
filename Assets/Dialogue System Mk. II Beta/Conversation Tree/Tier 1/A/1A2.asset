@@ -27,7 +27,7 @@ MonoBehaviour:
     autoAdvance: 0
     ShouldLeadToChoice: 0
     buttonText: []
-    holdButtonState: 0
+    holdButtonState: 1
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0

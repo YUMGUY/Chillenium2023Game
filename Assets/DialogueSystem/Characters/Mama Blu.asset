@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Mama Blu
   m_EditorClassIdentifier: 
   speakerName: Mama Blu
-  nameColor: {r: 0.3700605, g: 0.71574026, b: 0.7924528, a: 1}
+  nameColor: {r: 0.48718405, g: 0.4948682, b: 0.8679245, a: 1}
   characterLabel: 1
+  textSound: {fileID: 8300000, guid: 5d2bcab730a63bc44b614acfd122ca8c, type: 3}

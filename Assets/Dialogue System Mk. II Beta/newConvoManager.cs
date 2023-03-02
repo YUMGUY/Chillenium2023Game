@@ -45,11 +45,12 @@ public class newConvoManager : MonoBehaviour
 
         currTier = 0;
         writeTextRef.startConvo(prologueOrigin);
-       // writeTextRef.startConvo(originArr[currTier + 1][2]);
-        
         //Comment above line and uncomment below to start at specific tier
+        //writeTextRef.startConvo(originArr[currTier][0]);
+
+
         //writeTextRef.startConvo(shuffleConvos(currTier));
-        
+
     }
 
     // Update is called once per frame

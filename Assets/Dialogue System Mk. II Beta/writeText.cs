@@ -27,6 +27,7 @@ public class writeText : MonoBehaviour
 
     public Button QuestioningButton;
     public AudioClip questionSFX;
+    public Animator interjectAnim;
 
     [Header("Reactionary Variables")]
     public ScreenShake shaker;
@@ -49,6 +50,7 @@ public class writeText : MonoBehaviour
     public bool notePadOpened;
     public TextMeshProUGUI page1;
     public TextMeshProUGUI page2;
+    public AudioClip notebookOpen;
 
     [Header("Character Animator Properties")]
     public Animator[] animatorChars;
@@ -81,6 +83,11 @@ public class writeText : MonoBehaviour
                 {
                     convoManager.ConvoCompleteCalc(currentDialogue, false, -1);
                 }
+                else if (Input.GetKeyDown(KeyCode.Z) && !notePadOpened) {
+                    StopAllCoroutines();
+                    textPanel.text = currentDialogue.convo.convoText;
+                    state = State.COMPLETED;
+                }
             }
             else if (Input.GetKeyDown(KeyCode.Z) && convoStarted && !notePadOpened)
             {
@@ -103,6 +110,12 @@ public class writeText : MonoBehaviour
         {
             if (convoStarted && state == State.COMPLETED)
             {
+                showChoices();
+            }
+            else if (Input.GetKeyDown(KeyCode.Z) && convoStarted && !notePadOpened) {
+                StopAllCoroutines();
+                textPanel.text = currentDialogue.convo.convoText;
+                state = State.COMPLETED;
                 showChoices();
             }
         }
@@ -213,6 +226,13 @@ public class writeText : MonoBehaviour
 
 
         QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
+        if (currentDialogue.convo.holdButtonState)
+        {
+            interjectAnim.Play("Base Layer.interjectWiggle");
+        }
+        else {
+            interjectAnim.Play("Base Layer.interjectInactive");
+        }
 
 
         // enable ui 
@@ -370,10 +390,10 @@ public class writeText : MonoBehaviour
             try
             {
 
-                if (currentDialogue.convo.ShouldPlayTextSound && text[charIndex] != ' ')
+                if (currentDialogue.convo.character.textSound != null && text[charIndex] != ' ')
                 {
                     // print("play text sound");
-                    textSFXPlayer.clip = currentDialogue.convo.textSound;
+                    textSFXPlayer.clip = currentDialogue.convo.character.textSound;
                     textSFXPlayer.Play();
                 }
 
@@ -449,6 +469,16 @@ public class writeText : MonoBehaviour
 
             QuestioningButton.interactable = currentDialogue.convo.holdButtonState;
 
+            if (currentDialogue.convo.holdButtonState)
+            {
+                interjectAnim.Play("Base Layer.interjectWiggle");
+            }
+            else
+            {
+                interjectAnim.Play("Base Layer.interjectInactive");
+            }
+
+
             if (currentDialogue.convo.ShouldLeadToChoice)
             {
                 hasChoices = true;
@@ -488,6 +518,11 @@ public class writeText : MonoBehaviour
         int number = gameManagerRef.flagManager.Count;
         // do later
         gameManagerRef.flagManager.Keys.ToString();*/
+
+        genSFXPlayer.clip = notebookOpen;
+        genSFXPlayer.Play();
+
+
         notepadCanvas.alpha = 1;
         notepadCanvas.blocksRaycasts = true;
 

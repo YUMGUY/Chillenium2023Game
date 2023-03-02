@@ -30,7 +30,7 @@ MonoBehaviour:
     autoAdvance: 0
     ShouldLeadToChoice: 1
     buttonText:
-    - Do you have a problem with how she decides something?
+    - Does she often have trouble deciding things?
     - Why do you find this experience humiliating?
     holdButtonState: 0
     IncreaseHusbandHeart: 0

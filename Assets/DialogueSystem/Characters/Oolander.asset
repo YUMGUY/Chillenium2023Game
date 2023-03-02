@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Oolander
   m_EditorClassIdentifier: 
   speakerName: Oolander
-  nameColor: {r: 0.1573938, g: 0.6603774, b: 0.14640442, a: 1}
+  nameColor: {r: 0.59850127, g: 0.7735849, b: 0.48531505, a: 1}
   characterLabel: 1
+  textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}

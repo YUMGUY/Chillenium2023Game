@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Amy
   m_EditorClassIdentifier: 
   speakerName: Wife
-  nameColor: {r: 0.8962264, g: 0.4269758, b: 0.7518375, a: 1}
+  nameColor: {r: 0.9622642, g: 0.748932, b: 0.93742603, a: 1}
   characterLabel: 1
+  textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}

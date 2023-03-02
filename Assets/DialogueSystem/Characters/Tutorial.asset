@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Tutorial
   m_EditorClassIdentifier: 
   speakerName: Tutorial
-  nameColor: {r: 0.45496073, g: 0.03203986, b: 0.754717, a: 1}
+  nameColor: {r: 0.55360097, g: 0.16055535, b: 0.8301887, a: 1}
   characterLabel: 1
+  textSound: {fileID: 8300000, guid: c9b82b71278707443a2e902ec6ceb21d, type: 3}

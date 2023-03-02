@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Broseph
   m_EditorClassIdentifier: 
   speakerName: Broseph
-  nameColor: {r: 1, g: 0.36892486, b: 0, a: 1}
+  nameColor: {r: 0.8962264, g: 0.5412339, b: 0.33397114, a: 1}
   characterLabel: 1
+  textSound: {fileID: 8300000, guid: d201ff72232de2b458badc87d7fcf6dd, type: 3}
