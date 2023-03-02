@@ -12,11 +12,17 @@ public class EndingSceneInfo : MonoBehaviour
     public AudioClip heartSFX;
 
     public float howLongBeforePlayingSFX;
-    public float sfxAudioLength;
+    private float animRuntimeLength;
+
+    private Animator heartAnim;
 
     // Start is called before the first frame update
     void Start()
     {
+        heartAnim = GetComponent<Animator>();
+        animRuntimeLength = heartAnim.runtimeAnimatorController.animationClips[0].length;
+
+        //Debug.Log(animRuntimeLength);
         StartCoroutine(startEndAudio());
     }
 
@@ -31,7 +37,15 @@ public class EndingSceneInfo : MonoBehaviour
         endingAudio.clip = heartSFX;
         endingAudio.loop = false;
         endingAudio.Play();
-        yield return new WaitForSeconds(sfxAudioLength);
+
+        if (animRuntimeLength - howLongBeforePlayingSFX < 0)
+        {
+            yield return new WaitForSeconds(0);
+        }
+        else {
+            yield return new WaitForSeconds(animRuntimeLength - howLongBeforePlayingSFX);
+        }
+        
         endingAudio.clip = endingMusic;
         endingAudio.loop = true;
         endingAudio.Play();
