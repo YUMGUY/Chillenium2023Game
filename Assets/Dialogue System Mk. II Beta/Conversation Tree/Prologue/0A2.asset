@@ -13,44 +13,49 @@ MonoBehaviour:
   m_Name: 0A2
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Ahem. Excuse him, we had the 3 o\u2019 clock appointment?"
-    currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 21300000, guid: c25027e931eae524aa7e8ee6f3a3e0a4, type: 3}
-    - {fileID: 0}
+    convoText: "Hello. We're here for the 3 o\u2019 clock appointment?"
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
-    typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 11400000, guid: 234f34d83b5c58144bae460a90100c32, type: 2}
-    NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
-    holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
-    ShouldPlayFlash: 1
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 1
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayTextSound: 0
+    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}
+    typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}
+    ShouldPlaySound: 0
+    soundToPlay: {fileID: 0}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 0
+    intensity_: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    ShouldPlayFlash: 1
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
+    possibleNextTexts:
+    - {fileID: 11400000, guid: 234f34d83b5c58144bae460a90100c32, type: 2}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: c25027e931eae524aa7e8ee6f3a3e0a4, type: 3}
+    - {fileID: 0}
+    LeftCharOn: 1
+    RightCharOn: 1
+    CenterCharOn: 0
+    ShouldPlayAnimation: 1
+    AnimationAtWhatCharIdx: 0
+    animationName:
+    - CharSlotLeft_SlideInFromLeft
+    - CharSlotRight_SlideInFromRight
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
