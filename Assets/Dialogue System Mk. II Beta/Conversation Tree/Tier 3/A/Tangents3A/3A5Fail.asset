@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3A5Fail
   m_EditorClassIdentifier: 
   convo:
-    convoText: "What could he know that\u2019s so important? Nothing really..\r"
+    convoText: You stay out of it! You've said your peace!
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
@@ -36,9 +36,9 @@ MonoBehaviour:
     ShouldLeadToChoice: 0
     buttonText: []
     IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
+    IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: -0.05
     nameOfFlag: 
     possibleNextTexts:
     - {fileID: 11400000, guid: a370ea65286b3c9438340e20ecad6d22, type: 2}

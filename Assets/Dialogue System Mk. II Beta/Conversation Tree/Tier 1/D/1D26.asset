@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
-  m_Name: 3A5Success1
+  m_Name: 1D26
   m_EditorClassIdentifier: 
   convo:
-    convoText: Hold on let me cook.
-    character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
+    convoText: ...
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
     typingSpeed: 0.03
@@ -41,12 +41,12 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: a370ea65286b3c9438340e20ecad6d22, type: 2}
-    NextTaskConditions:
-    - def
-    - fail
-    - testflag
-    currentCharacterEmotions: []
+    - {fileID: 11400000, guid: 0ae57fa6dc6554643b33faa6b2abf6a0, type: 2}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: d4cefd1c2be46a24a93445f4007f247d, type: 3}
+    - {fileID: 21300000, guid: f48e0b70d6f23584ea392c9ccbe15ffd, type: 3}
+    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

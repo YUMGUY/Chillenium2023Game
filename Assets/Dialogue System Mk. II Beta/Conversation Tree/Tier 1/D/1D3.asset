@@ -32,7 +32,7 @@ MonoBehaviour:
     durationShake_: 0
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
-    holdButtonState: 0
+    holdButtonState: 1
     ShouldLeadToChoice: 0
     buttonText: []
     IncreaseHusbandHeart: 0
@@ -42,8 +42,13 @@ MonoBehaviour:
     nameOfFlag: 
     possibleNextTexts:
     - {fileID: 11400000, guid: c4bde9145ff125547bae4c4169516a46, type: 2}
+    - {fileID: 11400000, guid: c4bde9145ff125547bae4c4169516a46, type: 2}
+    - {fileID: 11400000, guid: a01f96cbeee14e040b8c67b78d8c6599, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 5931eb2a7bc370f488582e06d36fa691, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

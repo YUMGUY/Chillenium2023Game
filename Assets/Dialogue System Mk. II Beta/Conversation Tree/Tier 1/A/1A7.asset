@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: 1A7
   m_EditorClassIdentifier: 
   convo:
-    convoText: Here we go again, I'm *always* the bad guy!
+    convoText: Hey! I don't *hate* it. I just don't have a ready-made plan for what
+      I want to eat all the time.
     currentCharacterEmotions:
-    - {fileID: 21300000, guid: 7ca10f5e1632a304095b5aa7e6f64bec, type: 3}
     - {fileID: 0}
+    - {fileID: 21300000, guid: aeef71899209a8544b54efb468002d0f, type: 3}
     - {fileID: 0}
-    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: bdb460c6cb9b29b4ab71d096b73da9fa, type: 2}
+    - {fileID: 11400000, guid: 4e21c2a9fc10e96438b56b673d767e79, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -36,14 +37,14 @@ MonoBehaviour:
     RightCharOn: 1
     CenterCharOn: 0
     ShouldPlayShake: 1
-    ShakeAtWhatCharIdx: 22
+    ShakeAtWhatCharIdx: 0
     durationShake_: 0.2
     intensity_: 0.1
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
+    ShouldPlaySound: 1
     SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
@@ -56,4 +57,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}
+    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}

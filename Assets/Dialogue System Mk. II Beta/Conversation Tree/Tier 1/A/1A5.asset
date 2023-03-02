@@ -13,25 +13,24 @@ MonoBehaviour:
   m_Name: 1A5
   m_EditorClassIdentifier: 
   convo:
-    convoText: She never knows what she wants for dinner, and then hates wherever
-      I end up taking us.
+    convoText: Ha, you don't know the half of it, Doc.
     currentCharacterEmotions:
-    - {fileID: 21300000, guid: d93e775b640b9b8479f43f17a668a5f8, type: 3}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 2204d5d1fe000ec41acff8732ddab40b, type: 3}
+    - {fileID: 21300000, guid: 3c337a3b020a12840a5bd5a22df01f6f, type: 3}
     - {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 65e4e0e4e3fc8f149847357612b5a66b, type: 2}
+    - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
     buttonText: []
     holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
+    IncreaseHusbandHeart: 1
+    IncreaseWifeHeart: 1
+    HusbandHeartIncreaseInterval: 0.05
+    WifeHeartIncreaseInterval: -0.05
     nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
@@ -40,11 +39,11 @@ MonoBehaviour:
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
     intensity_: 0
-    ShouldPlayFlash: 0
+    ShouldPlayFlash: 1
     FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
+    ShouldPlaySound: 1
     SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: 0A18
   m_EditorClassIdentifier: 
   convo:
-    convoText: You can pair this function with key information you've collected to
-      steer the conversation toward a unique topic, awarding you with new information
-      or heart increases!
+    convoText: At any point in the conversation, the "Interject Button" may light
+      up. You can press this to have the speaker elaborate.
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -43,7 +42,7 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 83c3e885be0c98c42a84644fa4fc792b, type: 2}
+    - {fileID: 11400000, guid: 5d48e9601a17a9646baa08bfb8563dc3, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 0A17
   m_EditorClassIdentifier: 
   convo:
-    convoText: At any point in the conversation, the "Interject Button" may light
-      up. You can press this to have the speaker elaborate.
+    convoText: If you can get both of their hearts to connect, you may just be able
+      to save their marriage.
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 5d48e9601a17a9646baa08bfb8563dc3, type: 2}
+    - {fileID: 11400000, guid: d586f7db5123a0f448a6826600ecdcef, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1

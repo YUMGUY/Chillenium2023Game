@@ -39,7 +39,7 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
+    nameOfFlag: default
     possibleNextTexts:
     - {fileID: 11400000, guid: 5eb02c7f3f2bd5047b5aa1813d193f4a, type: 2}
     NextTaskConditions: []

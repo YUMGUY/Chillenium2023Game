@@ -39,10 +39,13 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: heWantsWife
+    nameOfFlag: 
     possibleNextTexts: []
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: c1dbe8f2dc0a67e49a8de20a31a40d2c, type: 3}
     LeftCharOn: 0
     RightCharOn: 0
     CenterCharOn: 1

@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: 1A9
   m_EditorClassIdentifier: 
   convo:
-    convoText: Why wouldn't it be? You only come to these places if your partner
-      is incompetent!
+    convoText: That's...that's not what I meant...
     currentCharacterEmotions:
     - {fileID: 0}
-    - {fileID: 21300000, guid: af2c7962198f30d42a0791000ff474b9, type: 3}
+    - {fileID: 21300000, guid: f48e0b70d6f23584ea392c9ccbe15ffd, type: 3}
     - {fileID: 0}
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 11400000, guid: 022654df640d63b4d97101aa5d219484, type: 2}
+    possibleNextTexts: []
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0

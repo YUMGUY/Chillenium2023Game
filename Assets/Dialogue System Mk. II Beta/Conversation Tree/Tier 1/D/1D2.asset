@@ -36,12 +36,12 @@ MonoBehaviour:
     ShouldLeadToChoice: 1
     buttonText:
     - That does sound interesting. Tell me more.
-    - "It seems that there\u2019s a lack of conflict. Miss why do you avoid him"
+    - Miss, are you avoiding him?
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
+    nameOfFlag: default
     possibleNextTexts:
     - {fileID: 0}
     - {fileID: 0}

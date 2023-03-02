@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1D9
   m_EditorClassIdentifier: 
   convo:
-    convoText: "I\u2026      fair point."
+    convoText: I can respect that.
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
@@ -41,9 +41,12 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 0c2e770a9ea30e345be997b4abea7005, type: 2}
+    - {fileID: 11400000, guid: 95d1c5dfc696a0d47931a9cb5082fc98, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 6454100d1b7ea064a8238a36d73d0e7e, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

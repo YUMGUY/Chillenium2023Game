@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2C20
   m_EditorClassIdentifier: 
   convo:
-    convoText: If I was her man, I would take her to fashion paradise.
+    convoText: If I were her man, I would take her to fashion paradise.
     character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -43,7 +43,10 @@ MonoBehaviour:
     possibleNextTexts:
     - {fileID: 11400000, guid: 88ce50369d34bcd4996fb31f6eefe484, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: c1dbe8f2dc0a67e49a8de20a31a40d2c, type: 3}
     LeftCharOn: 0
     RightCharOn: 0
     CenterCharOn: 1

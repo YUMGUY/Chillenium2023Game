@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 0A19
   m_EditorClassIdentifier: 
   convo:
-    convoText: Be careful though! If you interject without a logical conclusion,
-      you can anger the couple further.
+    convoText: You can pair this function with key information you've collected to
+      steer the conversation toward a unique topic, awarding you with new information
+      or heart increases!
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -42,7 +43,7 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 307eaf3fd0abfb947a5e5885d2da56bd, type: 2}
+    - {fileID: 11400000, guid: 2570c5a0c74576841b22022d12fa9ef2, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1

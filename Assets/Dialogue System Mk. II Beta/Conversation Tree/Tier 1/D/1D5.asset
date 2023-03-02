@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1D5
   m_EditorClassIdentifier: 
   convo:
-    convoText: "I guess that it\u2019s my fault as always."
+    convoText: "I guess it\u2019s my fault as always."
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
@@ -33,15 +33,21 @@ MonoBehaviour:
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     holdButtonState: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
-    IncreaseHusbandHeart: 0
+    ShouldLeadToChoice: 1
+    buttonText:
+    - No one has to be at fault here.
+    - How do you feel when you're without your husband?
+    IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
+    HusbandHeartIncreaseInterval: -0.03
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 0c2e770a9ea30e345be997b4abea7005, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 6c048af54dc07654fa708664146dc372, type: 2}
+    - {fileID: 11400000, guid: 82a47246ffac0774292c738e2e5bcde1, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1

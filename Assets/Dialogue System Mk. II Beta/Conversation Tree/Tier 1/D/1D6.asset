@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 1D6
   m_EditorClassIdentifier: 
   convo:
-    convoText: Sorry for my husband..I know that I give him the silent treatment.
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    convoText: Believe me, I've tried that! But it's kinda hard to put everything
+      aside when your wife is actively ignoring you.
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
     typingSpeed: 0.03
@@ -35,13 +36,13 @@ MonoBehaviour:
     holdButtonState: 0
     ShouldLeadToChoice: 0
     buttonText: []
-    IncreaseHusbandHeart: 0
+    IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
+    HusbandHeartIncreaseInterval: -0.02
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 7cef952416ddf5a4eb1debcb516b9fcf, type: 2}
+    - {fileID: 11400000, guid: 4aa66adf8d7dd254786db9655477f858, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1

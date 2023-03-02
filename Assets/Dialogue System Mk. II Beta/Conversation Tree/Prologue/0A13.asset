@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: 0A13
   m_EditorClassIdentifier: 
   convo:
-    convoText: In this game, you are a marriage counselor. Your job is to get these
-      two back from the brink of divorce and rekindle their love by guiding their
-      conversations.
+    convoText: Would you like to view the tutorial?
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -35,15 +33,21 @@ MonoBehaviour:
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     holdButtonState: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
+    ShouldLeadToChoice: 1
+    buttonText:
+    - Yes, please
+    - No, thank you
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 0ffd8fc22c8366243847a8b0867006ab, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 3e9fba16244887e44b8f1d46008cdd1a, type: 2}
+    - {fileID: 11400000, guid: 6cd7035027991774d8fbbef21a73bba4, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions:
     - {fileID: 21300000, guid: 9f29e5298c25ed147951b7f0d1b39a60, type: 3}
@@ -54,6 +58,6 @@ MonoBehaviour:
     ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
     animationName: []
-    ShouldUpdateBGM: 1
+    ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
-    musicToPlay: {fileID: 8300000, guid: c1569e2675fadf44d91f4bc278a4bdef, type: 3}
+    musicToPlay: {fileID: 0}

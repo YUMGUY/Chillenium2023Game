@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 1D10
   m_EditorClassIdentifier: 
   convo:
-    convoText: See? Even cute little children pick up after themselves
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    convoText: But it's still tough when I can't talk to you.
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
     typingSpeed: 0.03
@@ -36,14 +36,16 @@ MonoBehaviour:
     ShouldLeadToChoice: 0
     buttonText: []
     IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
+    IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0.05
     nameOfFlag: 
-    possibleNextTexts:
-    - {fileID: 11400000, guid: 0ae57fa6dc6554643b33faa6b2abf6a0, type: 2}
+    possibleNextTexts: []
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 8bd53fd3e9c7f31418f4e2b0f7b9dd48, type: 3}
+    - {fileID: 21300000, guid: c25027e931eae524aa7e8ee6f3a3e0a4, type: 3}
+    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

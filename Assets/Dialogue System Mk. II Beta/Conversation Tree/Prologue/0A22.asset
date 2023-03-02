@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 0A22
   m_EditorClassIdentifier: 
   convo:
-    convoText: So, where should we begin?
-    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
+    convoText: Be careful though! If you interject without a logical conclusion,
+      you can anger the couple further.
+    character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
     typingSpeed: 0.03
@@ -23,14 +24,14 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlaySound: 1
-    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
+    ShouldPlaySound: 0
+    soundToPlay: {fileID: 0}
     SoundAtWhatCharIdx: 0
     ShouldPlayShake: 0
     intensity_: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
-    ShouldPlayFlash: 1
+    ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
     holdButtonState: 0
     ShouldLeadToChoice: 0
@@ -40,17 +41,16 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    possibleNextTexts: []
+    possibleNextTexts:
+    - {fileID: 11400000, guid: 307eaf3fd0abfb947a5e5885d2da56bd, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions:
-    - {fileID: 21300000, guid: 6454100d1b7ea064a8238a36d73d0e7e, type: 3}
-    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
+    currentCharacterEmotions: []
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
     ShouldPlayAnimation: 0
     AnimationAtWhatCharIdx: 0
     animationName: []
-    ShouldUpdateBGM: 1
+    ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
-    musicToPlay: {fileID: 8300000, guid: 0857ca149f337534ea9a2876ec80cd95, type: 3}
+    musicToPlay: {fileID: 0}

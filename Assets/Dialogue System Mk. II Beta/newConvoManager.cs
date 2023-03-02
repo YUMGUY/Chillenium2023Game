@@ -44,9 +44,9 @@ public class newConvoManager : MonoBehaviour
         originArr.Add(originArrForTierThree);
 
         currTier = 0;
-        writeTextRef.startConvo(prologueOrigin);
+        //writeTextRef.startConvo(prologueOrigin);
         //Comment above line and uncomment below to start at specific tier
-        //writeTextRef.startConvo(originArr[currTier][0]);
+        writeTextRef.startConvo(originArr[currTier][3]);
 
 
         //writeTextRef.startConvo(shuffleConvos(currTier));
@@ -182,6 +182,11 @@ public class newConvoManager : MonoBehaviour
 
                 string flagRequirement = currDialogue.convo.possibleNextTexts[2].convo.NextTaskConditions[2];
                 bool flagValue = (bool)gameManagerRef.flagManager[flagRequirement];
+
+                Debug.Log("Pressed Interject");
+                Debug.Log("flag: " + flagRequirement + " is " + flagValue);
+
+
                 if (flagValue)
                 {
                     NextConvoIndex = 2;
@@ -193,6 +198,27 @@ public class newConvoManager : MonoBehaviour
             if (choiceButtonPressed > -1) {
                 NextConvoIndex = 2 + choiceButtonPressed;
             }
+            try
+            {
+                if (!usedButton && currDialogue.convo.possibleNextTexts[1].convo.NextTaskConditions.Length > 0)
+                {
+                    string flagRequirement = currDialogue.convo.possibleNextTexts[1].convo.NextTaskConditions[1];
+                    bool flagValue = (bool)gameManagerRef.flagManager[flagRequirement];
+                    Debug.Log("flag: " + flagRequirement + " is " + flagValue);
+                    if (flagValue)
+                    {
+                        NextConvoIndex = 2;
+                    }
+                    else
+                    {
+                        NextConvoIndex = 1;
+                    }
+                }
+            }
+            catch {
+                //Debug.Log("Caught error");
+            }
+            
 
 
             newDialogue = currDialogue.convo.possibleNextTexts[NextConvoIndex];

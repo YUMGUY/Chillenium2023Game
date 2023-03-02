@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 0A20
   m_EditorClassIdentifier: 
   convo:
-    convoText: Always make sure you're ready to interject by checking your current
-      information in the Notebook.
+    convoText: Try pressing it now!
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -33,7 +32,7 @@ MonoBehaviour:
     durationShake_: 0
     ShouldPlayFlash: 0
     FlashAtWhatCharIdx: 0
-    holdButtonState: 0
+    holdButtonState: 1
     ShouldLeadToChoice: 0
     buttonText: []
     IncreaseHusbandHeart: 0
@@ -42,7 +41,9 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: ac19de05bc6e71140ab3221ac3f2d368, type: 2}
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 1389d2fb0a5dd66449349bd287c92494, type: 2}
+    - {fileID: 11400000, guid: 1389d2fb0a5dd66449349bd287c92494, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1

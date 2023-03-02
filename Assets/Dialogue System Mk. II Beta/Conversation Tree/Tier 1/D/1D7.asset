@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 1D7
   m_EditorClassIdentifier: 
   convo:
-    convoText: "So you do know what happens when I don\u2019t meet your expectations"
-    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
+    convoText: Well I'm *sorry* I need my personal space sometimes...
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
     typingSpeed: 0.03
@@ -40,10 +40,12 @@ MonoBehaviour:
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
-    possibleNextTexts:
-    - {fileID: 11400000, guid: f37a1594d9f193c47a7bf04f99661319, type: 2}
+    possibleNextTexts: []
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 3c337a3b020a12840a5bd5a22df01f6f, type: 3}
+    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

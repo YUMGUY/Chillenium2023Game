@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     public void initializeHash(Hashtable Hash) {
         Hash.Clear();
         for (int i = 0; i < flagsList.Length; i++) {
-            Debug.Log(flagsList[i]);
+            //Debug.Log(flagsList[i]);
             Hash.Add(flagsList[i], false); //Creates hash with all flag names and initializes them all to 0.
         }
     }

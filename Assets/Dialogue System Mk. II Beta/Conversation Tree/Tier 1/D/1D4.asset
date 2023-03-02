@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1D4
   m_EditorClassIdentifier: 
   convo:
-    convoText: Only because you never admit that you did something wrong!
+    convoText: Only because you never admit that you did anything wrong!
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0

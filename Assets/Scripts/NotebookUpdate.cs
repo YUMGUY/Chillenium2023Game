@@ -37,6 +37,27 @@ public class NotebookUpdate : MonoBehaviour
             case ("testflag"):
                 notebookDesc = "This is a test flag";
                 break;
+            case ("motherStoodUpForHim"):
+                notebookDesc = "Mama Blu thinks her son just needs to talk it out with her.";
+                break ;
+            case ("husbandPlanningItaly"):
+                notebookDesc = "He is planning for their trip to Italy.";
+                break;
+            case ("husbandPayingOffWedding"):
+                notebookDesc = "He is still working to pay off their wedding expenses.";
+                break;
+            case ("wifeSecretBank"):
+                notebookDesc = "She has a secret bank account and is saving for their Italy trip.";
+                break;
+            case ("wifeOolanderFeelings"):
+                notebookDesc = "Oolander seems to think she's secretly into him.";
+                break;
+            case ("wifeFashionOrigins"):
+                notebookDesc = "She became a designer because of Italian fashion";
+                break;
+            case ("wifeWantsItaly"):
+                notebookDesc = "She wants to go on a trip to Italy";
+                break;
 
             
 

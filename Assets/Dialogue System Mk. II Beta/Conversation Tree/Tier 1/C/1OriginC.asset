@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1OriginC
   m_EditorClassIdentifier: 
   convo:
-    convoText: "I\u2019m having a hard time deciding\u2026"
+    convoText: What to talk about next...
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1

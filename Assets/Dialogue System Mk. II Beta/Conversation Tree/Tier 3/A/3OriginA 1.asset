@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 3OriginA 1
   m_EditorClassIdentifier: 
   convo:
-    convoText: "Well I guess that\u2019s fine, I was going to lose my mind if I argued
-      any further with my dear darling husband."
+    convoText: "Well I guess that\u2019s fine. I was going to lose my mind if I had
+      to argue any further with my darling husband."
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
+    nameOfFlag: default
     possibleNextTexts:
     - {fileID: 11400000, guid: ec6dac4d31c1b354783013989e937269, type: 2}
     NextTaskConditions: []

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 1A2
   m_EditorClassIdentifier: 
   convo:
-    convoText: Besides, it's humiliating enough that I have to even do this with
-      you!
+    convoText: Are you serious? It's a natural pause! Can I not even have a moment
+      of thought?
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
     typingSpeed: 0.03
-    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    textColor_: {r: 0, g: 0, b: 0, a: 1}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
@@ -31,8 +31,8 @@ MonoBehaviour:
     intensity_: 0
     ShakeAtWhatCharIdx: 0
     durationShake_: 0
-    ShouldPlayFlash: 1
-    FlashAtWhatCharIdx: 13
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
     holdButtonState: 0
     ShouldLeadToChoice: 0
     buttonText: []
@@ -42,11 +42,11 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 6e1dfb9127eb88b478feab84eed68791, type: 2}
+    - {fileID: 11400000, guid: 827a8a4cf6356cb44ba3bd47dbd30ce8, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions:
     - {fileID: 0}
-    - {fileID: 21300000, guid: 9853a860eff04b840a6cc4e4b356a214, type: 3}
+    - {fileID: 21300000, guid: aeef71899209a8544b54efb468002d0f, type: 3}
     - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1

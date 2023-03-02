@@ -46,7 +46,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 11400000, guid: 5814a40c532bc714c905722502cf6cad, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: eb815d7e77b765e4aaf0294c6c1a5089, type: 3}
     LeftCharOn: 0
     RightCharOn: 0
     CenterCharOn: 1

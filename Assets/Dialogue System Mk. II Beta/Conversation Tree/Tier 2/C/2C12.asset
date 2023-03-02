@@ -13,53 +13,54 @@ MonoBehaviour:
   m_Name: 2C12
   m_EditorClassIdentifier: 
   convo:
-    convoText: Just make it quick, I'm a busy man hohoho!
-    currentCharacterEmotions: []
+    convoText: Ah yes, she was always bewildered by the sights of Milan...
     character: {fileID: 11400000, guid: 76d459445f985af4ca205abe58cad8e4, type: 2}
+    autoAdvance: 0
+    ShouldPlayTextSound: 1
     typingSpeed: 0.03
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlaySound: 0
+    soundToPlay: {fileID: 0}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 0
+    intensity_: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 1
+    buttonText:
+    - Does Italy hold any special memories for you?
+    - What is "Juliet"'s fascination with Italy?
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
     possibleNextTexts:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 11400000, guid: 4995bea736178aa44855c10e81667be1, type: 2}
     - {fileID: 11400000, guid: 2723119529f2f5144a8570670efa17cb, type: 2}
-    NextTaskConditions: []
-    autoAdvance: 0
-    ShouldLeadToChoice: 1
-    buttonText:
-    - Does Italy hold any special memories for you?
-    - What is "Juliet"'s fascination with Italy?
-    holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
+    NextTaskConditions:
+    - 
+    - wifeWantsItaly
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: eda47a501dc116042a6cac3cef9ef1b1, type: 3}
     LeftCharOn: 0
     RightCharOn: 0
     CenterCharOn: 1
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName:
-    - 
-    - 
-    - CharSlotCenter_FadeIn
-    textColor_: {r: 0, g: 0, b: 0, a: 0}
-    inputFontSize: 0
-    isBold: 0
-    isWavy: 0
-    isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 2c4590bb73dc72446a462e6d495c623d, type: 3}

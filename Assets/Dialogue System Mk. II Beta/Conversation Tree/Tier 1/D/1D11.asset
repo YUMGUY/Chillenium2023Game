@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1D11
   m_EditorClassIdentifier: 
   convo:
-    convoText: A clean house is a good family environment!
+    convoText: Yes, I distance myself sometimes. Big deal!
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
@@ -41,8 +41,11 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: dcf00d7023c1a354c8b8eb02f5de4eeb, type: 2}
-    NextTaskConditions: []
+    - {fileID: 11400000, guid: d3c7460ca2d67dd48809d8b30a5deaa2, type: 2}
+    NextTaskConditions:
+    - 
+    - 
+    - default
     currentCharacterEmotions: []
     LeftCharOn: 1
     RightCharOn: 1

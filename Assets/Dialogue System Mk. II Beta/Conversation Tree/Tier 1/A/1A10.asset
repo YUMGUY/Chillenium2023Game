@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: 1A10
   m_EditorClassIdentifier: 
   convo:
-    convoText: You're the one who kept insisting that we needed this!
+    convoText: Why wouldn't it be? You only come to these places if your partner
+      is incompetent!
     currentCharacterEmotions:
-    - {fileID: 21300000, guid: b64c9b301d9bb014f97e70e2abbc2a2e, type: 3}
-    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
     - {fileID: 0}
-    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
+    - {fileID: 21300000, guid: af2c7962198f30d42a0791000ff474b9, type: 3}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: a714e9ef43d4b2243ac25064265a0daa, type: 2}
+    - {fileID: 11400000, guid: 022654df640d63b4d97101aa5d219484, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
@@ -56,4 +57,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}
+    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}

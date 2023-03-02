@@ -41,7 +41,7 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 3e9fba16244887e44b8f1d46008cdd1a, type: 2}
+    - {fileID: 11400000, guid: 80cdc55213985004c8626fb163c9fe10, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions:
     - {fileID: 21300000, guid: e5e0937eb52904e41b99de16fea85c63, type: 3}

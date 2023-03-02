@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 1D8
   m_EditorClassIdentifier: 
   convo:
-    convoText: Would you feel happy if you saw your house trashed up after you enjoyed
-      the day?
+    convoText: I feel... free to calm down. I just need some space to collect myself
+      is all.
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 0
@@ -42,9 +42,12 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: 863377ec10309ae4caa72288fd092f33, type: 2}
+    - {fileID: 11400000, guid: 1f6135be571e38e41a6c40bfef904e7d, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 3c337a3b020a12840a5bd5a22df01f6f, type: 3}
+    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0

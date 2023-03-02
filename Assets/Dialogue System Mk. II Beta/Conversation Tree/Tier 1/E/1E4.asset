@@ -13,20 +13,25 @@ MonoBehaviour:
   m_Name: 1E4
   m_EditorClassIdentifier: 
   convo:
-    convoText: I can't help how fast I eat. I wish he would just spend more time
-      with me instead of getting upset...
+    convoText: I've seen cows eat faster than that! Am I crazy here?
     currentCharacterEmotions:
-    - {fileID: 21300000, guid: d2932ec70994690428bf4c66524252fe, type: 3}
-    - {fileID: 21300000, guid: 9853a860eff04b840a6cc4e4b356a214, type: 3}
+    - {fileID: 21300000, guid: d93e775b640b9b8479f43f17a668a5f8, type: 3}
     - {fileID: 0}
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 36d713dbc784b1b47837b56e2c42c792, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: fbf0be409ce5b0840a525996eefc4f4f, type: 2}
+    - {fileID: 11400000, guid: c0e1a07f923c88e4e9311a24bec12024, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
+    ShouldLeadToChoice: 1
+    buttonText:
+    - Have you considered how long he waits for you to finish?
+    - Perhaps you could both eat more slowly.
     holdButtonState: 0
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
@@ -57,4 +62,4 @@ MonoBehaviour:
     isWavy: 0
     isWiggling: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

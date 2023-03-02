@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 1A11
   m_EditorClassIdentifier: 
   convo:
-    convoText: Well? Is this everything you thought it would be?
+    convoText: You're the one who kept insisting that we needed this!
     currentCharacterEmotions:
-    - {fileID: 21300000, guid: d93e775b640b9b8479f43f17a668a5f8, type: 3}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: b64c9b301d9bb014f97e70e2abbc2a2e, type: 3}
+    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
     - {fileID: 0}
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
     possibleNextTexts:
-    - {fileID: 11400000, guid: 05f6d7571a0c85d4093e150b26a0f34a, type: 2}
+    - {fileID: 11400000, guid: a714e9ef43d4b2243ac25064265a0daa, type: 2}
     NextTaskConditions: []
     autoAdvance: 0
     ShouldLeadToChoice: 0
