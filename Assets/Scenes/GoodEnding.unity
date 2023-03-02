@@ -440,6 +440,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screen: {fileID: 2060968020}
   blackScreen: {fileID: 1586096156}
+  endingAudio: {fileID: 1468877223}
+  endingMusic: {fileID: 8300000, guid: 10bccf1bf59bedd4c880e593d7642035, type: 3}
+  heartSFX: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
+  howLongBeforePlayingSFX: 0.8
+  sfxAudioLength: 0.5
 --- !u!1 &966743310
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +675,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 10bccf1bf59bedd4c880e593d7642035, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
