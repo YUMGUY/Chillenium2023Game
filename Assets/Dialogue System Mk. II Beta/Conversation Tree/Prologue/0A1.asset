@@ -17,7 +17,6 @@ MonoBehaviour:
     character: {fileID: 0}
     autoAdvance: 0
     ShouldPlayTextSound: 0
-    textSound: {fileID: 0}
     typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 1}
     inputFontSize: 0
@@ -46,8 +45,9 @@ MonoBehaviour:
     possibleNextTexts:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 11400000, guid: de0fd4294e8c3d44d88b953287b78b11, type: 2}
-    - {fileID: 11400000, guid: de0fd4294e8c3d44d88b953287b78b11, type: 2}
+    - {fileID: 11400000, guid: e21d675c9d646ff41aaaeb014cc1803d, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions:
     - {fileID: 0}

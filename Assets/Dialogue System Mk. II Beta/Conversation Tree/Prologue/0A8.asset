@@ -13,42 +13,49 @@ MonoBehaviour:
   m_Name: 0A8
   m_EditorClassIdentifier: 
   convo:
-    convoText: If you can get both of their hearts to the center, you may just be
-      able to help them through their marriage struggles.
-    currentCharacterEmotions: []
-    character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
-    typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 11400000, guid: d586f7db5123a0f448a6826600ecdcef, type: 2}
-    NextTaskConditions: []
+    convoText: It's your own fault for taking so long to get ready.
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
-    holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayTextSound: 1
+    typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: c9b82b71278707443a2e902ec6ceb21d, type: 3}
+    ShouldPlaySound: 0
+    soundToPlay: {fileID: 0}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 0
+    intensity_: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
+    possibleNextTexts:
+    - {fileID: 11400000, guid: 2945de4b452a2e246b07da315894b598, type: 2}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: e5e0937eb52904e41b99de16fea85c63, type: 3}
+    - {fileID: 21300000, guid: 9853a860eff04b840a6cc4e4b356a214, type: 3}
+    - {fileID: 0}
+    LeftCharOn: 1
+    RightCharOn: 1
+    CenterCharOn: 0
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName:
+    - 
+    - 
+    - 
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}

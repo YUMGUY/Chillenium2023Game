@@ -14,46 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   convo:
     convoText: '*$6.99*!!!'
-    currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 21300000, guid: b7dcb4348ae3de844898314424df35b9, type: 3}
     character: {fileID: 11400000, guid: 1c661c21beed46448894483453c1deae, type: 2}
-    typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 0}
-    NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
-    holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: motherIsOld
-    LeftCharOn: 0
-    RightCharOn: 0
-    CenterCharOn: 0
-    ShouldPlayShake: 1
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0.4
-    intensity_: 0.4
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 1
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
-    ShouldUpdateBGM: 0
-    musicAtWhatCharIdx: 0
-    musicToPlay: {fileID: 0}
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayTextSound: 1
+    typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: 5d2bcab730a63bc44b614acfd122ca8c, type: 3}
+    ShouldPlaySound: 1
+    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 1
+    intensity_: 0.4
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0.4
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: motherIsOld
+    possibleNextTexts:
+    - {fileID: 0}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: b7dcb4348ae3de844898314424df35b9, type: 3}
+    LeftCharOn: 0
+    RightCharOn: 0
+    CenterCharOn: 1
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}

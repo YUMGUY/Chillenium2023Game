@@ -22,7 +22,7 @@ public class TextBox : ScriptableObject
         [Header("-Text effects-")]
         public bool autoAdvance;
         public bool ShouldPlayTextSound;
-        public AudioClip textSound;         // This should be combined with "Character"
+        //public AudioClip textSound;         // This should be combined with "Character"
         public float typingSpeed;
 
 

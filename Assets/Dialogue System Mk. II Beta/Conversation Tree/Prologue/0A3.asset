@@ -15,10 +15,9 @@ MonoBehaviour:
   convo:
     convoText: ...which we would have been on time for if *someone* hadn't eaten
       so slowly.
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}
     typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
@@ -47,7 +46,7 @@ MonoBehaviour:
     NextTaskConditions: []
     currentCharacterEmotions:
     - {fileID: 21300000, guid: 7ca10f5e1632a304095b5aa7e6f64bec, type: 3}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
     - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
