@@ -15,6 +15,7 @@ MonoBehaviour:
   convo:
     convoText: '*knock knock*'
     character: {fileID: 0}
+    autoAdvance: 0
     ShouldPlayTextSound: 0
     textSound: {fileID: 0}
     typingSpeed: 0.03
@@ -23,44 +24,41 @@ MonoBehaviour:
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    possibleNextTexts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: de0fd4294e8c3d44d88b953287b78b11, type: 2}
-    NextTaskConditions: []
-    autoAdvance: 0
+    ShouldPlaySound: 0
+    soundToPlay: {fileID: 0}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 0
+    intensity_: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
     ShouldLeadToChoice: 1
     buttonText:
-    - Come in
-    holdButtonState: 0
+    - Come in!
+    - You're late...
     IncreaseHusbandHeart: 0
     IncreaseWifeHeart: 0
     HusbandHeartIncreaseInterval: 0
     WifeHeartIncreaseInterval: 0
     nameOfFlag: default
-    LeftCharOn: 1
-    RightCharOn: 1
+    possibleNextTexts:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: de0fd4294e8c3d44d88b953287b78b11, type: 2}
+    - {fileID: 11400000, guid: de0fd4294e8c3d44d88b953287b78b11, type: 2}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    LeftCharOn: 0
+    RightCharOn: 0
     CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
-    ShouldPlayAnimation: 1
-    AnimationAtWhatCharIdx: 0
-    animationName:
-    - 
-    - CharSlotRight_SlideInFromRight
-    - 
