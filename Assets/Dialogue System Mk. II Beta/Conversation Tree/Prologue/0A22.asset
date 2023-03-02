@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747e303f3f83ab64ebc370e3b346f604, type: 3}
+  m_Name: 0A22
+  m_EditorClassIdentifier: 
+  convo:
+    convoText: So, where should we begin?
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
+    autoAdvance: 0
+    ShouldPlayTextSound: 1
+    typingSpeed: 0.03
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlaySound: 1
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 0
+    intensity_: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    ShouldPlayFlash: 1
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
+    possibleNextTexts: []
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 6454100d1b7ea064a8238a36d73d0e7e, type: 3}
+    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
+    LeftCharOn: 1
+    RightCharOn: 1
+    CenterCharOn: 0
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    ShouldUpdateBGM: 1
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 8300000, guid: 0857ca149f337534ea9a2876ec80cd95, type: 3}
