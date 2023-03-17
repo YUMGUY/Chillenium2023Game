@@ -9,6 +9,9 @@ public class newConvoManager : MonoBehaviour
     public writeText writeTextRef;
     public GameManager gameManagerRef;
 
+    [Header("All Routes Factors")]
+    public int currentRouteNumber;
+
     public int currTier;
     public int maxConvoTier = 4;
 
@@ -42,7 +45,6 @@ public class newConvoManager : MonoBehaviour
         originArr.Add(originArrForTierOne);
         originArr.Add(originArrForTierTwo);
         originArr.Add(originArrForTierThree);
-
         currTier = 0;
         writeTextRef.startConvo(prologueOrigin);
         //Comment above line and uncomment below to start at specific tier
@@ -51,6 +53,8 @@ public class newConvoManager : MonoBehaviour
 
         //writeTextRef.startConvo(shuffleConvos(currTier));
 
+        // start at Route A always in tier 1
+        currentRouteNumber = 0;
     }
 
     // Update is called once per frame
@@ -112,11 +116,12 @@ public class newConvoManager : MonoBehaviour
     public void ConvoCompleteCalc(TextBox currDialogue, bool usedButton, int choiceButtonPressed)
     {
         //Here is where we perform any end-of-conversation calculations/figuring out where to go from here.
-        int numOfConvosFromCurrent = currDialogue.convo.possibleNextTexts.Length;
+        int numOfConvosFromCurrent = currDialogue.convo.possibleNextTexts.Length; // timmy: currently just go through all routes a-e,a-c,a 
 
         if (numOfConvosFromCurrent == 0) {
 
-
+            // comment out everything in this if statement and just keep track of current tier and current route number index
+            // when reaching end of origin legnth array, go to next tier ++currTier and route index = 0 
             if (listOfRoutesToGetThrough.Count != 0)
             {
                 Debug.Log("1 listOfRoutes Count " + listOfRoutesToGetThrough.Count);
@@ -195,12 +200,12 @@ public class newConvoManager : MonoBehaviour
             }
 
 
-            newDialogue = currDialogue.convo.possibleNextTexts[NextConvoIndex];
+            newDialogue = currDialogue.convo.possibleNextTexts[NextConvoIndex]; 
 
         }
 
 
-        writeTextRef.NextLine(newDialogue);
+        writeTextRef.NextLine(newDialogue); // this should be left untouched
 
     }
 

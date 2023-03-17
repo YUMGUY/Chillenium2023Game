@@ -28,7 +28,7 @@ public class ScreenShake : MonoBehaviour
 
     public IEnumerator Shake(float duration, float magnitude)
     {
-        
+        transform.localPosition = new Vector3(0, 0, -10); // fix for having multiple shakes
         Vector3 originalPos = transform.localPosition;
         float elapsedTime = 0;
         while(elapsedTime < duration)

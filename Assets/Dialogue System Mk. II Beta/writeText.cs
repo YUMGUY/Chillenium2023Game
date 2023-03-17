@@ -58,6 +58,10 @@ public class writeText : MonoBehaviour
     [Header("Character Emotion Properties")]
     public Image[] characterBodies;
 
+    [Header("Ending Variables")]
+    public TextBox finalGoodNode;
+    public TextBox finalBadNode;
+
 
 
     private enum State
@@ -140,7 +144,7 @@ public class writeText : MonoBehaviour
         for (int i = 0; i < numOfButtons; i++)
         {
 
-            Debug.Log(choiceButtonArr[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().name);
+           // Debug.Log(choiceButtonArr[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().name);
 
             choiceButtonArr[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = currentDialogue.convo.buttonText[i];
             choiceButtonArr[i].SetActive(true);
@@ -493,6 +497,12 @@ public class writeText : MonoBehaviour
 
         else
         {
+            if(convoManager.currTier != 3 && currentDialogue.name != finalBadNode.name && currentDialogue.name != finalGoodNode.name)
+            {
+                print("MISSING NEXT TEXTBOX AT THIS NODE: " + currentDialogue.name);
+                return;
+            }
+
             print("Jump to Final Ending");
             textPanel.text = string.Empty;
             // temporary disappearance of dialogue box and characters
@@ -506,7 +516,6 @@ public class writeText : MonoBehaviour
             */
 
             convoStarted = false;
-
             gameManagerRef.gameEnd();
         }
     }

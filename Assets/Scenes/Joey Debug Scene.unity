@@ -4017,6 +4017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   writeTextRef: {fileID: 1558358597840967328}
   gameManagerRef: {fileID: 2092236290}
+  currentRouteNumber: 0
   currTier: 0
   maxConvoTier: 3
   originArrForTierOne:
@@ -6508,6 +6509,8 @@ MonoBehaviour:
   - {fileID: 1152552517}
   - {fileID: 338026284}
   - {fileID: 1887697749}
+  finalGoodNode: {fileID: 11400000, guid: 3f997a68486e6cb4f8690f985da377bc, type: 2}
+  finalBadNode: {fileID: 11400000, guid: 5c4687fa8f6ca274db4520e99b5962c2, type: 2}
 --- !u!82 &1558358597840967329
 AudioSource:
   m_ObjectHideFlags: 0

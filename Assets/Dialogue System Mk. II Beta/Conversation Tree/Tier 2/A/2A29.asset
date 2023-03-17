@@ -41,7 +41,7 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: motherIsOld
     possibleNextTexts:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 81af610066bd6aa49bf7920467b0f18c, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions:
     - {fileID: 0}
