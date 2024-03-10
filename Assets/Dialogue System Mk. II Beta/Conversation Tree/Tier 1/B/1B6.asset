@@ -14,48 +14,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   convo:
     convoText: BUT YOU DON'T LISTEN!
+    currentCharacterEmotions: []
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
-    autoAdvance: 0
-    ShouldPlayTextSound: 1
     typingSpeed: 0.08
-    textColor_: {r: 0, g: 0, b: 0, a: 0}
-    inputFontSize: 0
-    isBold: 0
-    isWavy: 0
-    isWiggling: 0
-    ShouldPlaySound: 1
-    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
-    SoundAtWhatCharIdx: 0
-    ShouldPlayShake: 1
-    intensity_: 0.3
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0.2
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    holdButtonState: 0
-    ShouldLeadToChoice: 1
-    buttonText:
-    - Sir, how do you feel knowing this now?
-    - "Ma\u2019am, why do you feel the need to pick up after him?"
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
     possibleNextTexts:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 11400000, guid: 60f6f9b832a9a114cb5ed303b6a181e7, type: 2}
-    - {fileID: 11400000, guid: f2ab3fc15319ab148b6f191d78e8c7ca, type: 2}
+    - {fileID: 11400000, guid: 75e178ad2b2596440a3b438e35bfc6a6, type: 2}
     NextTaskConditions: []
-    currentCharacterEmotions: []
+    autoAdvance: 0
+    ShouldLeadToChoice: 1
+    buttonText:
+    - Do you feel his hygiene is a primary concern?
+    - Do you feel like you have to pick up after him?
+    holdButtonState: 0
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayShake: 1
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0.2
+    intensity_: 0.3
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    ShouldPlaySound: 1
+    SoundAtWhatCharIdx: 0
+    soundToPlay: {fileID: 8300000, guid: 2e854957a10f5a1419a2885ddf3f2fb2, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}

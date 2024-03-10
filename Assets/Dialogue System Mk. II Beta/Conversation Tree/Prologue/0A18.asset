@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 0A18
   m_EditorClassIdentifier: 
   convo:
-    convoText: (Skipped) You can pair this function with key information you've collected
-      to steer the conversation toward a unique topic, awarding you with new information
+    convoText: You can pair this function with key information you've collected to
+      steer the conversation toward a unique topic, awarding you with new information
       or heart increases!
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0

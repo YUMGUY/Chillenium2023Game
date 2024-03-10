@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0A7
   m_EditorClassIdentifier: 
   convo:
-    convoText: I'm so terribly sorry we're late, Doctor!
+    convoText: I'm so terribly sorry we're late!
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1

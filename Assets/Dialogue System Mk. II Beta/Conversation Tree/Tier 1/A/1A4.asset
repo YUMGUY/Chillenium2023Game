@@ -13,52 +13,47 @@ MonoBehaviour:
   m_Name: 1A4
   m_EditorClassIdentifier: 
   convo:
-    convoText: "It\u2019s not exactly a vacation for me either, babe!"
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
-    autoAdvance: 0
-    ShouldPlayTextSound: 1
+    convoText: Ha, you don't know the half of it, Doc.
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 2204d5d1fe000ec41acff8732ddab40b, type: 3}
+    - {fileID: 21300000, guid: 3c337a3b020a12840a5bd5a22df01f6f, type: 3}
+    - {fileID: 0}
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     typingSpeed: 0.03
-    textColor_: {r: 0, g: 0, b: 0, a: 0}
-    inputFontSize: 0
-    isBold: 0
-    isWavy: 0
-    isWiggling: 0
-    ShouldPlaySound: 1
-    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
-    SoundAtWhatCharIdx: 0
-    ShouldPlayShake: 0
-    intensity_: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    ShouldPlayFlash: 1
-    FlashAtWhatCharIdx: 0
+    possibleNextTexts:
+    - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
+    NextTaskConditions: []
+    autoAdvance: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
     holdButtonState: 0
-    ShouldLeadToChoice: 1
-    buttonText:
-    - "Ma\u2019am, why do you feel he cannot express his feelings?"
-    - Sir, why do you find this experience embarrassing?
     IncreaseHusbandHeart: 1
     IncreaseWifeHeart: 1
     HusbandHeartIncreaseInterval: 0.05
     WifeHeartIncreaseInterval: -0.05
     nameOfFlag: 
-    possibleNextTexts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: b9e34af70028a1b4cbab291e266b8cf9, type: 2}
-    - {fileID: 11400000, guid: 05f6d7571a0c85d4093e150b26a0f34a, type: 2}
-    NextTaskConditions: []
-    currentCharacterEmotions:
-    - {fileID: 21300000, guid: 2204d5d1fe000ec41acff8732ddab40b, type: 3}
-    - {fileID: 21300000, guid: 3c337a3b020a12840a5bd5a22df01f6f, type: 3}
-    - {fileID: 0}
     LeftCharOn: 1
     RightCharOn: 1
     CenterCharOn: 0
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayShake: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    intensity_: 0
+    ShouldPlayFlash: 1
+    FlashAtWhatCharIdx: 0
+    ShouldPlaySound: 1
+    SoundAtWhatCharIdx: 0
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
     ShouldUpdateBGM: 0
     musicAtWhatCharIdx: 0
     musicToPlay: {fileID: 0}
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    textColor_: {r: 0, g: 0, b: 0, a: 0}
+    inputFontSize: 0
+    isBold: 0
+    isWavy: 0
+    isWiggling: 0
+    ShouldPlayTextSound: 1
+    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 0A14
   m_EditorClassIdentifier: 
   convo:
-    convoText: At the top of the screen is the Heart Meter. It displays how well
-      the couple is doing.
+    convoText: At the top of the screen is the Heart Meter. The left half represents
+      the Husband and the right half, the Wife.
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1

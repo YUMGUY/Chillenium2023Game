@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 0A19
   m_EditorClassIdentifier: 
   convo:
-    convoText: Be careful to only interject if the speaker should  elaborate! Some
-      topics are better to not focus on.
+    convoText: Be careful though! If you interject without a logical conclusion,
+      you can anger the couple further.
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
     WifeHeartIncreaseInterval: 0
     nameOfFlag: 
     possibleNextTexts:
-    - {fileID: 11400000, guid: ac19de05bc6e71140ab3221ac3f2d368, type: 2}
+    - {fileID: 11400000, guid: 307eaf3fd0abfb947a5e5885d2da56bd, type: 2}
     NextTaskConditions: []
     currentCharacterEmotions: []
     LeftCharOn: 1
