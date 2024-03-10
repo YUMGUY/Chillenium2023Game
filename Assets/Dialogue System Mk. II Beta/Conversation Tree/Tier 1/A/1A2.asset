@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: 1A2
   m_EditorClassIdentifier: 
   convo:
-    convoText: Besides, it's humiliating enough that I have to even do this with
-      you!
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
+    convoText: Oh you want to know how I feel?
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1
     typingSpeed: 0.03
