@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 0A15
   m_EditorClassIdentifier: 
   convo:
-    convoText: Depending on your actions, these half hearts may move closer to or
-      farther away from each other.
+    convoText: The left half of the heart represents the husband, and the right,
+      the wife.
     character: {fileID: 11400000, guid: f6c2aad656d23c5479fbe9639b9c0096, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1

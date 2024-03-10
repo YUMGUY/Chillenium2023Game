@@ -13,47 +13,46 @@ MonoBehaviour:
   m_Name: 1B11
   m_EditorClassIdentifier: 
   convo:
-    convoText: Darling, I'm getting my money's worth!
-    currentCharacterEmotions:
-    - {fileID: 0}
-    - {fileID: 21300000, guid: 263099b9a5d0c28469012a74706c90ca, type: 3}
-    - {fileID: 0}
-    character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
-    typingSpeed: 0.03
-    possibleNextTexts:
-    - {fileID: 11400000, guid: 6ea84f49e0489134c902a4941ba5fafb, type: 2}
-    NextTaskConditions: []
+    convoText: "I guess I\u2019ve said this before, but\u2026"
+    character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
-    holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
-    ShouldPlayShake: 1
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0.2
-    intensity_: 0.3
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 1
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
-    ShouldUpdateBGM: 0
-    musicAtWhatCharIdx: 0
-    musicToPlay: {fileID: 0}
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayTextSound: 1
+    typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: e57843deeaa810447a7f07822207c862, type: 3}
+    ShouldPlaySound: 1
+    soundToPlay: {fileID: 8300000, guid: 9bb2fbf1d44f8ba4e8f335f6492c0dda, type: 3}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 1
+    intensity_: 0.3
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0.2
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 0
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0
+    nameOfFlag: 
+    possibleNextTexts:
+    - {fileID: 11400000, guid: 6ea84f49e0489134c902a4941ba5fafb, type: 2}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 263099b9a5d0c28469012a74706c90ca, type: 3}
+    - {fileID: 0}
+    LeftCharOn: 1
+    RightCharOn: 1
+    CenterCharOn: 0
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}

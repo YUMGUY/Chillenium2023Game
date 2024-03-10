@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0A12
   m_EditorClassIdentifier: 
   convo:
-    convoText: "We're... here for the 3 o\u2019 clock appointment?"
+    convoText: "We're... here for the 3 o\u2019 clock appointment."
     character: {fileID: 11400000, guid: ee0f1680979acde438282c662284e14b, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1

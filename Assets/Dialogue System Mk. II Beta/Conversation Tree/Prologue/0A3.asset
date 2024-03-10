@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 0A3
   m_EditorClassIdentifier: 
   convo:
-    convoText: ...which we would have been on time for if *someone* hadn't eaten
-      so slowly.
+    convoText: We would have been on time for if *someone* hadn't eaten so slowly.
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
     autoAdvance: 0
     ShouldPlayTextSound: 1

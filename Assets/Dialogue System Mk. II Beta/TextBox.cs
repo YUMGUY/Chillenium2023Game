@@ -5,14 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewDialogue", menuName = "Dialogue_Data/New Dialogue Field")]
 public class TextBox : ScriptableObject
 {
-    [Header("Conversation Attributes")]
+    //[Header("Conversation Attributes")]
     public Conversation convo;
 
     [System.Serializable]
     public struct Conversation
     {
 
-        [TextArea(2, 10)]
+        [TextArea(2, 8)]
         public string convoText;
 
         [Header("-Speaker-")]

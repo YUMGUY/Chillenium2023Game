@@ -13,46 +13,46 @@ MonoBehaviour:
   m_Name: 1B12
   m_EditorClassIdentifier: 
   convo:
-    convoText: Always about money! See what I'm talking about, Doc?
-    currentCharacterEmotions:
-    - {fileID: 21300000, guid: 34992ca94e378a2499c968d3751c68f7, type: 3}
-    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
-    - {fileID: 0}
+    convoText: I can actually try to do better moving forward.
     character: {fileID: 11400000, guid: 25703711e64d25b48b3df0d90b74d8ed, type: 2}
-    typingSpeed: 0.03
-    possibleNextTexts: []
-    NextTaskConditions: []
     autoAdvance: 0
-    ShouldLeadToChoice: 0
-    buttonText: []
-    holdButtonState: 0
-    IncreaseHusbandHeart: 0
-    IncreaseWifeHeart: 0
-    HusbandHeartIncreaseInterval: 0
-    WifeHeartIncreaseInterval: 0
-    nameOfFlag: 
-    LeftCharOn: 1
-    RightCharOn: 1
-    CenterCharOn: 0
-    ShouldPlayShake: 0
-    ShakeAtWhatCharIdx: 0
-    durationShake_: 0
-    intensity_: 0
-    ShouldPlayFlash: 0
-    FlashAtWhatCharIdx: 0
-    ShouldPlaySound: 0
-    SoundAtWhatCharIdx: 0
-    soundToPlay: {fileID: 0}
-    ShouldUpdateBGM: 0
-    musicAtWhatCharIdx: 0
-    musicToPlay: {fileID: 0}
-    ShouldPlayAnimation: 0
-    AnimationAtWhatCharIdx: 0
-    animationName: []
+    ShouldPlayTextSound: 1
+    typingSpeed: 0.03
     textColor_: {r: 0, g: 0, b: 0, a: 0}
     inputFontSize: 0
     isBold: 0
     isWavy: 0
     isWiggling: 0
-    ShouldPlayTextSound: 1
-    textSound: {fileID: 8300000, guid: f1b5e8c19e829714394a5d0fda81c5d6, type: 3}
+    ShouldPlaySound: 0
+    soundToPlay: {fileID: 0}
+    SoundAtWhatCharIdx: 0
+    ShouldPlayShake: 0
+    intensity_: 0
+    ShakeAtWhatCharIdx: 0
+    durationShake_: 0
+    ShouldPlayFlash: 0
+    FlashAtWhatCharIdx: 0
+    holdButtonState: 0
+    ShouldLeadToChoice: 0
+    buttonText: []
+    IncreaseHusbandHeart: 0
+    IncreaseWifeHeart: 1
+    HusbandHeartIncreaseInterval: 0
+    WifeHeartIncreaseInterval: 0.1
+    nameOfFlag: 
+    possibleNextTexts:
+    - {fileID: 11400000, guid: ca9f3628f60e40840b227497489822b5, type: 2}
+    NextTaskConditions: []
+    currentCharacterEmotions:
+    - {fileID: 21300000, guid: 34992ca94e378a2499c968d3751c68f7, type: 3}
+    - {fileID: 21300000, guid: c8f330ab79c81d04c94e56e0a1064680, type: 3}
+    - {fileID: 0}
+    LeftCharOn: 1
+    RightCharOn: 1
+    CenterCharOn: 0
+    ShouldPlayAnimation: 0
+    AnimationAtWhatCharIdx: 0
+    animationName: []
+    ShouldUpdateBGM: 0
+    musicAtWhatCharIdx: 0
+    musicToPlay: {fileID: 0}
